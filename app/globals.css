@@ -3,6 +3,8 @@
 
 @custom-variant dark (&:is(.dark *));
 
+
+
 :root {
   --background: oklch(0.9809 0.0025 228.7836);
   --foreground: oklch(0.3211 0 0);
@@ -47,6 +49,17 @@
   --shadow-md: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
   --shadow-lg: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
   --shadow-xl: 0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+
+  --shadow-card: 4px 4px oklch(0 0 0);
+  --shadow-hover: 10px 10px oklch(0 0 0);
+  --shadow-pblue: 7px 7px oklch(0.8148 0.0819 225.7537);
+  --shadow-pgreen: 7px 7px #ADF296;
+  --shadow-ppink: 7px 7px #F396E5;
+  --shadow-pblueHover: 10px 10px #96C7F2;
+  --shadow-pgreenHover: 10px 10px #ADF296;
+  --shadow-ppinkHover: 10px 10px #F396E5;
+  --shadow-pyellow: 7px 7px #F2CF96;
+
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
@@ -136,6 +149,7 @@
   --font-sans: var(--font-sans);
   --font-mono: var(--font-mono);
   --font-serif: var(--font-serif);
+  --font-pacifico: var(--font-pacifico);
 
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -150,6 +164,15 @@
   --shadow-lg: var(--shadow-lg);
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
+  --shadow-card: var(--shadow-card);
+  --shadow-hover: var(--shadow-hover);
+  --shadow-pblue: var(--shadow-pblue);
+  --shadow-pgreen: var(--shadow-pgreen);
+  --shadow-ppink: var(--shadow-ppink);
+  --shadow-pblueHover: var(--shadow-pblueHover);
+  --shadow-pgreenHover: var(--shadow-pgreenHover);
+  --shadow-ppinkHover: var(--shadow-ppinkHover);
+  --shadow-pyellow: var(--shadow-pyellow);
 }
 
 @layer base {
