@@ -2,11 +2,11 @@
 
 import Link from 'next/link';
 import React, { useState } from 'react';
-//import { Transition } from '@headlessui/react';
+import Image from 'next/image';
 
 import { siteDetails } from '@/utils/constants';
 import { menuItems } from '@/utils/constants';
-import { Fingerprint, X, Menu} from 'lucide-react';
+import { X, Menu} from 'lucide-react';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -16,31 +16,37 @@ export default function Header() {
     };
 
     return (
-        <header className="bg-transparent fixed top-0 left-0 right-0 md:absolute z-50 mx-auto w-full">
+        <header className="bg-white fixed top-0 left-0 right-0 z-50 mx-auto w-full">
             <div className="!px-0 container">
-                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-10">
+                <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-4">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2">
-                        <Fingerprint className="text-foreground min-w-fit w-7 h-7" />
-                        <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
-                            {siteDetails.siteName}
-                        </span>
+                        {
+                            siteDetails.siteLogo && (
+                                <Image 
+                                src={siteDetails.siteLogo} 
+                                alt={siteDetails.siteName} 
+                                width={80} 
+                                height={50} 
+                                className="cursor-pointer w-auto h-10"
+                                />
+                            ) || (
+                                <span className="manrope text-xl font-semibold text-foreground cursor-pointer">
+                                    {siteDetails.siteName}
+                                </span>
+                            )
+                        }
                     </Link>
 
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.text}>
-                                <Link href={item.url} className="text-foreground hover:text-foreground-accent transition-colors">
-                                    {item.text}
+                                <Link href={item.url} className="rounded-md border-black px-4 py-2 hover:border-1 hover:shadow-pblue hover:text-secondary transition-shadow duration-300 ease-in-out">
+                                    {item.text.toUpperCase()}
                                 </Link>
                             </li>
                         ))}
-                        <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-8 py-3 rounded-full transition-colors">
-                                Download
-                            </Link>
-                        </li>
                     </ul>
 
                     {/* Mobile Menu Button */}
@@ -74,11 +80,6 @@ export default function Header() {
                                 </Link>
                             </li>
                         ))}
-                        <li>
-                            <Link href="#cta" className="text-black bg-primary hover:bg-primary-accent px-5 py-2 rounded-full block w-fit" onClick={toggleMenu}>
-                                Get Started
-                            </Link>
-                        </li>
                     </ul>
                 </div>
             </div>
