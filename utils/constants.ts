@@ -3,23 +3,28 @@ import { IMenuItem } from "@/types/menuItems";
 export const menuItems: IMenuItem[] = [
     {
         text: "Home",
-        url: "/"
+        url: "/",
+        shadow: "pblue"
     },
     {
         text: "About Us",
-        url: "#about"
+        url: "/about",
+        shadow: "ppurple"
     },
     {
         text: "Clique Crew",
-        url: "#crew"
+        url: "/crew",
+        shadow: "pyellow"
     },
     {
         text: "Philanthropy ",
-        url: "#philanthropy"
+        url: "/philanthropy",
+        shadow: "pgreen"
     },
     {
         text: "Contact Us",
-        url: "#contact"
+        url: "/contact",
+        shadow: "ppink"
     }
 ];
 

@@ -15,6 +15,14 @@ export default function Header() {
         setIsOpen(!isOpen);
     };
 
+    const colorVariants = {
+        pblue: "hover:shadow-pblue hover:text-pblue",
+        pgreen: "hover:shadow-pgreen hover:text-pgreen",
+        ppink: "hover:shadow-ppink hover:text-ppink",
+        pyellow: "hover:shadow-pyellow hover:text-pyellow",
+        ppurple: "hover:shadow-ppurple hover:text-ppurple"
+    };
+
     return (
         <header className="bg-white fixed top-0 left-0 right-0 z-50 mx-auto w-full">
             <div className="!px-0 container">
@@ -41,8 +49,8 @@ export default function Header() {
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
-                            <li key={item.text}>
-                                <Link href={item.url} className="rounded-md border-black px-4 py-2 hover:border-1 hover:shadow-pblue hover:text-secondary transition-shadow duration-300 ease-in-out">
+                            <li key={item.url}>
+                                <Link href={item.url} className={`rounded-md border border-transparent shadow-none hover:border-black px-4 py-2 hover:border-1 ${colorVariants[item.shadow as keyof typeof colorVariants]} transition ease-in-out`}>
                                     {item.text.toUpperCase()}
                                 </Link>
                             </li>

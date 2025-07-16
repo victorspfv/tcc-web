@@ -3,6 +3,13 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --color-pblue: oklch(0.8148 0.0819 225.7537);
+  --color-pgreen: oklch(0.7395 0.2268 142.8504);
+  --color-ppurple: oklch(0.6913 0.1453 295.7208);
+  --color-ppink: oklch(0.8677 0.0735 7.0855);
+  --color-pyellow: oklch(0.8652 0.1768 90.3816);
+}
 
 
 :root {
@@ -54,12 +61,14 @@
   --shadow-hover: 10px 10px oklch(0 0 0);
   --shadow-pblue: 7px 7px oklch(0.8148 0.0819 225.7537);
   --shadow-pgreen: 7px 7px #ADF296;
+  --shadow-ppurple: 7px 7px oklch(0.6913 0.1453 295.7208);
   --shadow-ppink: 7px 7px #F396E5;
   --shadow-pblueHover: 10px 10px #96C7F2;
   --shadow-pgreenHover: 10px 10px #ADF296;
   --shadow-ppinkHover: 10px 10px #F396E5;
   --shadow-pyellow: 7px 7px #F2CF96;
-
+  --shadow-pyellowlight: 7px 7px oklch(0.9680 0.2110 109.7692);
+  --shadow-pyellowHover: 10px 10px #F2CF96;
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
@@ -167,12 +176,15 @@
   --shadow-card: var(--shadow-card);
   --shadow-hover: var(--shadow-hover);
   --shadow-pblue: var(--shadow-pblue);
+  --shadow-ppurple: var(--shadow-ppurple);
   --shadow-pgreen: var(--shadow-pgreen);
   --shadow-ppink: var(--shadow-ppink);
+  --shadow-pyellow: var(--shadow-pyellow);
   --shadow-pblueHover: var(--shadow-pblueHover);
+  --shadow-pyellowlight: var(--shadow-pyellowlight);
   --shadow-pgreenHover: var(--shadow-pgreenHover);
   --shadow-ppinkHover: var(--shadow-ppinkHover);
-  --shadow-pyellow: var(--shadow-pyellow);
+  --shadow-pyellowHover: var(--shadow-pyellowHover);
 }
 
 @layer base {
