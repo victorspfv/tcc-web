@@ -282,7 +282,7 @@ export default function AboutPage() {
                     </motion.div>
                 </motion.div>
             </section>
-            <CTA />
+            <CTA bgColor="bg-ppurple" shadowColor="shadow-ppurpleHover" />
         </main>
     );
 }

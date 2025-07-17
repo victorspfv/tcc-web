@@ -73,6 +73,7 @@
   --shadow-pyellow: 7px 7px #F2CF96;
   --shadow-pyellowlight: 7px 7px oklch(0.9680 0.2110 109.7692);
   --shadow-pyellowHover: 10px 10px #F2CF96;
+  --shadow-ppurpleHover: 10px 10px oklch(0.6913 0.1453 295.7208);
   --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
   --tracking-normal: 0em;
   --spacing: 0.25rem;
@@ -177,6 +178,7 @@
   --shadow-lg: var(--shadow-lg);
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
+
   --shadow-card: var(--shadow-card);
   --shadow-hover: var(--shadow-hover);
   --shadow-pblue: var(--shadow-pblue);
@@ -192,6 +194,7 @@
   --shadow-ppinkHover: var(--shadow-ppinkHover);
   --shadow-pyellowHover: var(--shadow-pyellowHover);
   --shadow-card1: var(--shadow-card1);
+  --shadow-ppurpleHover: var(--shadow-ppurpleHover);
 }
 
 @layer base {
