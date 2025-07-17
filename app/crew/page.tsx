@@ -6,7 +6,7 @@ import TeamCard from "@/components/landing/team-card";
 export default function CrewPage() {
     return (
         <main className="pt-[56px] lg:pt-[72px]">
-            <HeaderPage title="Meet the Crew" />
+            <HeaderPage title="Meet the Crew" color="bg-pyellow" />
             <section className="py-16">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid items-center gap-8 lg:grid-cols-2">
