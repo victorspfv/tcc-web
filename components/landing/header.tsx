@@ -7,9 +7,11 @@ import Image from 'next/image';
 import { siteDetails } from '@/utils/constants';
 import { menuItems } from '@/utils/constants';
 import { X, Menu} from 'lucide-react';
+import { usePathname } from 'next/navigation';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
 
     const toggleMenu = () => {
         setIsOpen(!isOpen);
@@ -22,9 +24,16 @@ export default function Header() {
         pyellow: "hover:shadow-pyellow hover:text-pyellow",
         ppurple: "hover:shadow-ppurple hover:text-ppurple"
     };
+    const activeColor = {
+        pblue: "border-black text-pblue",
+        pgreen: "border-black text-pgreen",
+        ppink: "border-black text-ppink",
+        pyellow: "border-black text-pyellow",
+        ppurple: "border-black text-ppurple"
+    };
 
     return (
-        <header className="bg-white fixed top-0 left-0 right-0 z-50 mx-auto w-full">
+        <header className="bg-white fixed top-0 left-0 right-0 z-50 mx-auto w-full border-b border-border">
             <div className="!px-0 container">
                 <nav className="shadow-md md:shadow-none bg-white md:bg-transparent mx-auto flex justify-between items-center py-2 px-5 md:py-4">
                     {/* Logo */}
@@ -50,7 +59,7 @@ export default function Header() {
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.url}>
-                                <Link href={item.url} className={`rounded-md border border-transparent shadow-none hover:border-black px-4 py-2 hover:border-1 ${colorVariants[item.shadow as keyof typeof colorVariants]} transition ease-in-out`}>
+                                <Link href={item.url} className={`rounded-md border shadow-none hover:border-black px-4 py-2 hover:border-1 ${colorVariants[item.shadow as keyof typeof colorVariants]} transition ease-in-out ${pathname === item.url ? activeColor[item.shadow as keyof typeof activeColor] : 'border-transparent'}`}>
                                     {item.text.toUpperCase()}
                                 </Link>
                             </li>

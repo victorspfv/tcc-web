@@ -1,6 +1,6 @@
 //import ComingSoon from "@/components/landing/coming-soon";
 import Hero from "@/components/landing/hero";
-import ComingSoon2 from "@/components/landing/coming-soon2";
+import CTA2 from "@/components/landing/cta2";
 //import Hero2 from "@/components/landing/hero2";
 //import Instagram from "@/components/landing/instagram";
 //import Welcome from "@/components/landing/welcome";
@@ -12,7 +12,7 @@ export default function Home() {
         <main className="pt-[56px] lg:pt-[72px]">
             <Hero />
             <Welcome2 />
-            <ComingSoon2 />
+            <CTA2 bgColor="bg-pblue" shadowColor="shadow-ppink" />
             <Instagram2 />
         </main>  
     );

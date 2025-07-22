@@ -75,7 +75,7 @@ export default function Instagram2() {
     return (
         <section className="bg-gray-100">
             <motion.div 
-                className="container px-4 md:px-32 flex flex-col items-center justify-center py-16 lg:py-32"
+                className="relative container px-4 md:px-32 flex flex-col items-center justify-center py-16 lg:py-32"
                 variants={containerVariants}
                 initial="hidden"
                 whileInView="visible"
