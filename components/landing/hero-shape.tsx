@@ -30,7 +30,7 @@ export default function HeroShape() {
         transition={{ delay: 0.4 }}
         >
             <motion.g clipPath="url(#clip0_9_6)">
-                <motion.circle cx="536.5" cy="536.5" r="536.5" className="fill-secondary" />
+                <motion.circle cx="536.5" cy="536.5" r="536.5" className="fill-gray-100" />
             </motion.g>
             <motion.defs>
                 <motion.clipPath id="clip0_9_6">

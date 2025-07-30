@@ -42,12 +42,19 @@ export const siteDetails = {
 }
 
 export const instagramImages = [
-    'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop',
-    'https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=300&h=300&fit=crop',
+      "/assets/images/gallery/img5.webp",
+      "/assets/images/gallery/img10.webp",
+      "/assets/images/gallery/img4.webp",
+      "/assets/images/gallery/img7.webp",
+      "/assets/images/gallery/img9.webp",
+      "/assets/images/gallery/img3.webp",
+      "/assets/images/gallery/img6.webp",
+      "/assets/images/gallery/img8.webp",
   ];
+
+  export const instagramImagesMobile = [
+    "/assets/images/gallery/img5.webp",
+    "/assets/images/gallery/img7.webp",
+    "/assets/images/gallery/img9.webp",
+    "/assets/images/gallery/img4.webp",
+];

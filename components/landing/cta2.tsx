@@ -163,7 +163,7 @@ export default function CTA2({ bgColor, shadowColor }: { bgColor: string; shadow
                                 <Button
                                     size="lg"
                                     className={`text-primary-foreground border-1 border-black rounded-2xl hover:bg-primary/90 font-bold px-10 py-6 bg-primary shadow-card hover:shadow-hover transition ease-in-out`}>
-                                    Get Early Access
+                                    Join the waitlist
                                 </Button>
                             </motion.div>
                         </motion.div>

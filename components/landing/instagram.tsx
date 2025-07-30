@@ -1,35 +1,63 @@
 import Image from "next/image";
-import { instagramImages } from "@/utils/constants";
+import { instagramImages, instagramImagesMobile } from "@/utils/constants";
 import { Button } from "@/components/ui/button";
+import { InstagramIcon } from "lucide-react";
 
 export default function Instagram() {
     return (
-        <section className="py-16 bg-white">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="text-center mb-12">
-                    <h3 className="text-4xl md:text-5xl font-bold mb-4 text-secondary font-pacifico">
+        <section className="pt-16 bg-white">
+            <div className="w-full mx-auto px-0">
+                <div className="flex flex-col items-center p-4 md:p-10 gap-6 justify-center mb-10">
+                    <h2 className="text-4xl lg:text-7xl font-pacifico leading-tight text-foreground">
                         Follow us on Instagram
-                    </h3>
-                    <Button variant="link" className="text-xl">
-                        <a href="https://www.instagram.com/joinheclosetclique" target="_blank" rel="noopener noreferrer">
-                            @joinheclosetclique
-                        </a>
-                    </Button>
+                    </h2>
+                    <p className="text-lg text-muted-foreground md:text-2xl max-w-2xl text-center">
+                        Join our community and get inspired by the latest outfit trends, styling tips, and
+                        behind-the-scenes content from your favorite closet clique!
+                    </p>
+                    <div>
+                        <Button
+                            asChild
+                            className="bg-accent text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out py-2 h-12 rounded-2xl px-8 font-bold">
+                            <a
+                                href="https://www.instagram.com/theclosetclique/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                <InstagramIcon className="w-4 h-4 mr-2" />
+                                Follow us
+                            </a>
+                        </Button>
+                    </div>
                 </div>
 
-                {/* Instagram grid */}
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {/* Instagram grid desktop */}
+                <div className="grid-cols-2 md:grid-cols-4 hidden lg:grid">
                     {instagramImages.map((image, index) => (
                         <div
-                            className="aspect-square bg-gradient-to-br from-[#E796BA] to-[#5CA1CB] rounded-lg"
-                            key={index}>
+                            key={index}
+                            className="aspect-square bg-gradient-to-br from-[#E796BA] to-[#5CA1CB] rounded-lg">
                             <Image
-                                loading="lazy"
                                 src={image}
                                 alt="Instagram"
-                                className="w-full h-full rounded-lg object-cover border-3 border-primary shadow-pblue hover:shadow-pblueHover transition-all duration-300 ease-in-out"
-                                width={300}
-                                height={300}
+                                width={400}
+                                height={400}
+                                className="w-full h-full object-cover"
+                            />
+                        </div>
+                    ))}
+                </div>
+                {/* Instagram grid mobile */}
+                <div className="grid-cols-2 md:grid-cols-4 grid lg:hidden">
+                    {instagramImagesMobile.map((image, index) => (
+                        <div
+                            key={index}
+                            className="aspect-square bg-gradient-to-br from-[#E796BA] to-[#5CA1CB] rounded-lg">
+                            <Image
+                                src={image}
+                                alt="Instagram"
+                                width={100}
+                                height={100}
+                                className="w-full h-full object-cover"
                             />
                         </div>
                     ))}
