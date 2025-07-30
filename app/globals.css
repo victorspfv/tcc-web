@@ -26,7 +26,7 @@
   --secondary-foreground: oklch(0 0 0);
   --muted: oklch(0.8828 0.0285 98.1033);
   --muted-foreground: oklch(0.5382 0 0);
-  --accent: oklch(0.9680 0.2110 109.7692);
+  --accent: oklch(0.8790 0.1534 91.6054);
   --accent-foreground: oklch(0 0 0);
   --destructive: oklch(0.6368 0.2078 25.3313);
   --destructive-foreground: oklch(1.0000 0 0);
@@ -206,5 +206,9 @@
   }
   .container {
     @apply px-5 w-full max-w-7xl mx-auto;
+  }
+  /* Text shadow light blue */
+  .text-shadow {
+    text-shadow: 2px 2px 4px oklch(0.8148 0.0819 225.7537);;
   }
 }
