@@ -1,30 +1,35 @@
-import { Button } from "@/components/ui/button";
-import { Pacifico } from "next/font/google";
-
-const pacifico = Pacifico({
-    variable: "--font-pacifico",
-    subsets: ["latin"],
-    weight: ["400"],
-});
-
 const images = [
-    "/assets/images/gallery/img1.webp",
-    "/assets/images/gallery/img2.webp",
-    "/assets/images/gallery/img3.webp",
-    "/assets/images/gallery/img4.webp",
-    "/assets/images/gallery/img5.webp",
-    "/assets/images/gallery/img6.webp",
-    "/assets/images/gallery/img7.webp",
-    "/assets/images/gallery/img8.webp",
-    "/assets/images/gallery/img9.webp",
-    "/assets/images/gallery/img10.webp",
+    "/assets/images/hero/himg1.webp",
+    "/assets/images/hero/himg2.webp",
+    "/assets/images/hero/himg3.webp",
+    "/assets/images/hero/himg4.webp",
+    "/assets/images/hero/himg5.webp",
+    "/assets/images/hero/himg6.webp",
+    "/assets/images/hero/himg7.webp",
+    "/assets/images/hero/himg8.webp",
+    "/assets/images/hero/himg9.webp",
+    "/assets/images/hero/himg10.webp",
+    "/assets/images/hero/himg11.webp",
+    "/assets/images/hero/himg12.webp",
+    "/assets/images/hero/himg13.webp",
+    "/assets/images/hero/himg14.webp",
+    "/assets/images/hero/himg15.webp",
+    "/assets/images/hero/himg16.webp",
+    "/assets/images/hero/himg17.webp",
+    "/assets/images/hero/himg18.webp",
+    "/assets/images/hero/himg19.webp",
+    "/assets/images/hero/himg20.webp",
+    "/assets/images/hero/himg21.webp",
+    "/assets/images/hero/himg22.webp",
+    "/assets/images/hero/himg23.webp",
+    "/assets/images/hero/himg24.webp",
 ];
 
-const Hero2 = () => {
+export default function Hero2() {
     return (
         <section className="relative min-h-[50vh] lg:min-h-[80vh] overflow-hidden bg-secondary shadow-lg">
             <div className="absolute inset-0 opacity-90 pb-8">
-                <div className="grid grid-cols-6 gap-0 h-full">
+                <div className="grid grid-cols-8 gap-0 h-full">
                     {/* Creating a photo grid effect with placeholder images */}
                     {Array.from({ length: 24 }, (_, i) => (
                         <div
@@ -51,6 +56,4 @@ const Hero2 = () => {
             </div>
         </section>
     );
-};
-
-export default Hero2;
+}
