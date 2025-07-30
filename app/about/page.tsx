@@ -53,7 +53,7 @@ export default function AboutPage() {
     return (
         <main className="pt-[56px] lg:pt-[104px]">
             {/* Hero Section */}
-            <HeaderPage title="About Us" color="bg-ppurple" />
+            <HeaderPage title="About Us" color="bg-pblue700" />
             
             {/* About Section */}
             <section className="bg-background py-16 md:py-20 lg:py-32">

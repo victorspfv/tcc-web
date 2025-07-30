@@ -99,13 +99,13 @@ export default function Welcome2() {
                     <div className="relative flex items-center justify-center">
                         <motion.div whileTap={{ scale: 0.95 }}>
                             <Button className="bg-primary text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out mt-6 py-2 h-12 rounded-2xl px-8 font-bold">
-                                Download App
+                                Join the waitlist
                             </Button>
                         </motion.div>
                     </div>
                 </motion.div>
                 <div className="relative w-80 h-[600px] mx-auto mt-16">
-                <div className="absolute bottom-[-90rem] left-0 w-full flex justify-center">
+                <motion.div className="absolute bottom-[-90rem] left-0 w-full flex justify-center" variants={itemVariants}>
                     <Image
                             src="/assets/images/circles.svg"
                             width={1000}
@@ -113,7 +113,7 @@ export default function Welcome2() {
                             alt=""
                             className=" aspect-square h-auto w-[180rem] max-w-none"
                         />
-                </div>
+                </motion.div>
                     
 
                     {/* Phone Frame */}
