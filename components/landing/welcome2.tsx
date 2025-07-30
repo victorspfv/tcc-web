@@ -80,10 +80,10 @@ export default function Welcome2() {
                 <motion.div className="group" variants={buttonVariants}>
                     <div className="relative flex items-center justify-center">
                         <motion.div
-                            whileHover={{ scale: 1.05 }}
+                            
                             whileTap={{ scale: 0.95 }}
                         >
-                            <Button className="bg-primary text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out hover:bg-primary/90 mt-6 py-2 h-12 rounded-2xl px-8 font-bold">
+                            <Button className="bg-accent text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out hover:bg-primary/90 mt-6 py-2 h-12 rounded-2xl px-8 font-bold">
                                 <Play className="w-4 h-4 mr-2" />
                                 Watch A Demo
                             </Button>
