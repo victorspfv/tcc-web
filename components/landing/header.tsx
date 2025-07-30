@@ -19,16 +19,20 @@ export default function Header() {
 
     const colorVariants = {
         pblue: "hover:shadow-pblue hover:text-pblue",
+        pblue700: "hover:shadow-pblue700 hover:text-pblue",
         pgreen: "hover:shadow-pgreen hover:text-pgreen",
         ppink: "hover:shadow-ppink hover:text-ppink",
         pyellow: "hover:shadow-pyellow hover:text-pyellow",
+        pmint: "hover:shadow-pmint hover:text-pmint",
         ppurple: "hover:shadow-ppurple hover:text-ppurple"
     };
     const activeColor = {
         pblue: "border-black text-pblue",
+        pblue700: "border-black text-pblue700",
         pgreen: "border-black text-pgreen",
         ppink: "border-black text-ppink",
         pyellow: "border-black text-pyellow",
+        pmint: "border-black text-pmint",
         ppurple: "border-black text-ppurple"
     };
 
@@ -45,7 +49,7 @@ export default function Header() {
                                 alt={siteDetails.siteName} 
                                 width={80} 
                                 height={50} 
-                                className="cursor-pointer w-auto h-10"
+                                className="cursor-pointer w-auto h-18"
                                 />
                             ) || (
                                 <span className="manrope text-xl font-semibold text-foreground cursor-pointer">

@@ -105,7 +105,7 @@ export default function Instagram2() {
                             <motion.div whileTap={{ scale: 0.95 }}>
                                 <Button
                                     asChild
-                                    className="bg-accent text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out hover:bg-primary/90 py-2 h-12 rounded-2xl px-8 font-bold">
+                                    className="bg-accent text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out py-2 h-12 rounded-2xl px-8 font-bold">
                                     <a
                                         href="https://www.instagram.com/theclosetclique/"
                                         target="_blank"

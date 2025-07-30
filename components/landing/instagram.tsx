@@ -13,12 +13,12 @@ export default function Instagram() {
                     </h2>
                     <p className="text-lg text-muted-foreground md:text-2xl max-w-2xl text-center">
                         Join our community and get inspired by the latest outfit trends, styling tips, and
-                        behind-the-scenes content from your favorite closet clique!
+                        behind-the-scenes content from your favorite Clique Crew! 
                     </p>
                     <div>
                         <Button
                             asChild
-                            className="bg-accent text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out py-2 h-12 rounded-2xl px-8 font-bold">
+                            className="bg-accent text-primary-foreground border-1 border-black shadow-card hover:shadow-hover hover:bg-accent transition ease-in-out py-2 h-12 rounded-2xl px-8 font-bold">
                             <a
                                 href="https://www.instagram.com/theclosetclique/"
                                 target="_blank"

@@ -9,7 +9,7 @@ export const menuItems: IMenuItem[] = [
     {
         text: "About Us",
         url: "/about",
-        shadow: "ppurple"
+        shadow: "pblue700"
     },
     {
         text: "Clique Crew",
@@ -19,7 +19,7 @@ export const menuItems: IMenuItem[] = [
     {
         text: "Philanthropy ",
         url: "/philanthropy",
-        shadow: "pgreen"
+        shadow: "pmint"
     },
     {
         text: "Contact Us",

@@ -4,7 +4,7 @@ import React from "react";
 
 export default function PhilanthropyPage() {
     return (
-        <main className="pt-[56px] lg:pt-[72px]">
+        <main className="pt-[56px] lg:pt-[104px]">
             {/* Hero Section */}
             <HeaderPage title="Philanthropy" color="bg-pgreen" />
 

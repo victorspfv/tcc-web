@@ -87,8 +87,12 @@ export default function Welcome2() {
                         <strong>browse, rent, or resell outfits</strong> within their verified school network. Whether
                         you&apos;re prepping for a formal or a birthday brunch, our goal is to make dressing up more
                         fun, accessible, and community-driven. We&apos;re proud to start in our hometown of
-                        Dallas&mdash;with our sights set BIG on campuses nationwide. Because in Texas, everything
-                        (including dreams) is bigger!
+                        Dallas&mdash;with our sights set BIG on campuses nationwide. 
+                    </motion.p>
+                    <motion.p
+                        className="mx-auto mt-6 max-w-4xl text-center text-lg text-primary font-semibold md:text-2xl"
+                        variants={itemVariants}>
+                        Because in Texas, everything (including dreams) is bigger!
                     </motion.p>
                 </motion.header>
                 <motion.div className="group mt-10" variants={buttonVariants}>
