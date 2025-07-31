@@ -24,7 +24,7 @@ const pacifico = Pacifico({
 
 export const metadata: Metadata = {
   title: "The Closet Clique",
-  description: "A resale and rental platform designed exclusively for high school and college students.",
+  description: "renting and reselling outfits within your high school or college community. Each verified school network, aka your Clique, is a private space where girls can post items from their own closets to rent or resell, earn cash, and browse looks from friends",
 };
 
 export default function RootLayout({

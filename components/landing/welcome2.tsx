@@ -64,6 +64,20 @@ export default function Welcome2() {
         },
     };
 
+    const shapeVariants = {
+        hidden: { opacity: 0, scale: 0.9, y: 30, transform: "translateY(100px)" },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            transition: {
+                duration: 1,
+                delay: 0.4,
+            },
+            transform: "translateY(0px)",
+        },
+    };
+
     return (
         <section className="bg-white py-10 px-4 relative overflow-hidden">
             <motion.div
@@ -87,7 +101,7 @@ export default function Welcome2() {
                         <strong>browse, rent, or resell outfits</strong> within their verified school network. Whether
                         you&apos;re prepping for a formal or a birthday brunch, our goal is to make dressing up more
                         fun, accessible, and community-driven. We&apos;re proud to start in our hometown of
-                        Dallas&mdash;with our sights set BIG on campuses nationwide. 
+                        Dallas&mdash;with our sights set BIG on campuses nationwide.
                     </motion.p>
                     <motion.p
                         className="mx-auto mt-6 max-w-4xl text-center text-lg text-primary font-semibold md:text-2xl"
@@ -98,23 +112,28 @@ export default function Welcome2() {
                 <motion.div className="group mt-10" variants={buttonVariants}>
                     <div className="relative flex items-center justify-center">
                         <motion.div whileTap={{ scale: 0.95 }}>
-                            <Button className="bg-primary text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out mt-6 py-2 h-12 rounded-2xl px-8 font-bold">
+                            <Button className="bg-primary text-primary-foreground border-1 border-black shadow-card hover:shadow-hover transition ease-in-out mt-6 py-2 h-12 rounded-2xl px-8 font-bold text-lg">
                                 Join the waitlist
                             </Button>
                         </motion.div>
                     </div>
                 </motion.div>
+                {/* Hero Shape */}
                 <div className="relative w-80 h-[600px] mx-auto mt-16">
-                <motion.div className="absolute bottom-[-90rem] left-0 w-full flex justify-center" variants={itemVariants}>
-                    <Image
+                    <motion.div
+                        className="absolute bottom-[-90rem] left-0 w-full flex justify-center"
+                        variants={shapeVariants}
+                        initial="hidden"
+                        animate="visible"
+                        transition={{ delay: 0.4 }}>
+                        <Image
                             src="/assets/images/circles.svg"
                             width={1000}
                             height={1000}
                             alt=""
                             className=" aspect-square h-auto w-[180rem] max-w-none"
                         />
-                </motion.div>
-                    
+                    </motion.div>
 
                     {/* Phone Frame */}
                     <motion.div variants={phoneVariants} className="relative w-80 mx-auto">

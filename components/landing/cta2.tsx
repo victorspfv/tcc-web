@@ -162,7 +162,7 @@ export default function CTA2({ bgColor, shadowColor }: { bgColor: string; shadow
                                 transition={{ duration: 0.2 }}>
                                 <Button
                                     size="lg"
-                                    className={`text-primary-foreground border-1 border-black rounded-2xl hover:bg-primary/90 font-bold px-10 py-6 bg-primary shadow-card hover:shadow-hover transition ease-in-out`}>
+                                    className={`text-primary-foreground text-lg border-1 border-black rounded-2xl hover:bg-primary font-bold px-10 py-6 bg-primary shadow-card hover:shadow-hover transition ease-in-out`}>
                                     Join the waitlist
                                 </Button>
                             </motion.div>
@@ -180,7 +180,7 @@ export default function CTA2({ bgColor, shadowColor }: { bgColor: string; shadow
 
                             {/* Front phone */}
                             <motion.div
-                                className={`p-4 lg:p-18 absolute -translate-y-[6%] top-0 right-0 z-40 flex items-center justify-center overflow-clip rounded-3xl bg-accent shadow-card`}
+                                className={`p-4 lg:p-18 absolute -translate-y-[6%] top-0 right-0 z-40 flex items-center justify-center overflow-clip rounded-4xl bg-accent shadow-card`}
                                 variants={frontPhoneVariants}
                                 whileHover={{
                                     scale: 1.05,

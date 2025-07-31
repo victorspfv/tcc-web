@@ -47,7 +47,7 @@ export const instagramImages = [
       "/assets/images/gallery/img4.webp",
       "/assets/images/gallery/img7.webp",
       "/assets/images/gallery/img9.webp",
-      "/assets/images/gallery/img3.webp",
+      "/assets/images/gallery/img2.webp",
       "/assets/images/gallery/img6.webp",
       "/assets/images/gallery/img8.webp",
   ];

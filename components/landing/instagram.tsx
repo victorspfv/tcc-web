@@ -18,7 +18,7 @@ export default function Instagram() {
                     <div>
                         <Button
                             asChild
-                            className="bg-accent text-primary-foreground border-1 border-black shadow-card hover:shadow-hover hover:bg-accent transition ease-in-out py-2 h-12 rounded-2xl px-8 font-bold">
+                            className="bg-accent text-primary-foreground border-1 border-black shadow-card hover:shadow-hover hover:bg-accent transition ease-in-out py-2 h-12 rounded-2xl px-8 font-bold text-lg">
                             <a
                                 href="https://www.instagram.com/theclosetclique/"
                                 target="_blank"

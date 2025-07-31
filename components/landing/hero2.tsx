@@ -12,7 +12,7 @@ const images = [
     "/assets/images/hero/himg11.webp",
     "/assets/images/hero/himg12.webp",
     "/assets/images/hero/himg13.webp",
-    "/assets/images/hero/himg14.webp",
+    "/assets/images/hero/himg25.webp",
     "/assets/images/hero/himg15.webp",
     "/assets/images/hero/himg16.webp",
     "/assets/images/hero/himg17.webp",
