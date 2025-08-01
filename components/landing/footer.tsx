@@ -23,7 +23,7 @@ export default function Footer() {
                     {/* Right Section: Links and Contact */}
                     <div className="flex flex-col gap-6 items-center md:items-end">
                         <nav className="flex gap-4 sm:gap-6" aria-label="Footer navigation">
-                            <Link href="/terms-conditions" className="text-sm hover:text-primary transition-colors">
+                            <Link href="/fulfillment-policy" className="text-sm hover:text-primary transition-colors">
                                 Fulfillment
                             </Link>
                             <Link href="/privacy-policy" className="text-sm hover:text-primary transition-colors">
