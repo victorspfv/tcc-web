@@ -1,11 +1,9 @@
 "use client";
 
 import HeaderPage from "@/components/landing/header-page";
-import { HeartIcon, Gift, Sparkles } from "lucide-react";
-import React from "react";
+import { Gift, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 import CTA from "@/components/landing/cta";
-import Image from "next/image";
 
 export default function PhilanthropyPage() {
     const containerVariants = {
@@ -26,18 +24,6 @@ export default function PhilanthropyPage() {
             y: 0,
             transition: {
                 duration: 0.8
-            }
-        }
-    };
-
-    const iconVariants = {
-        hidden: { opacity: 0, scale: 0.8 },
-        visible: {
-            opacity: 1,
-            scale: 1,
-            transition: {
-                duration: 0.6,
-                delay: 0.2
             }
         }
     };
@@ -68,18 +54,6 @@ export default function PhilanthropyPage() {
                     viewport={{ once: true, amount: 0.3 }}
                 >
                     <div className="flex flex-col items-center justify-center gap-16">
-                        {/* Icon */}
-                        <motion.div 
-                            className="w-24 h-24 bg-pblue rounded-full flex items-center justify-center border-1 border-black shadow-card"
-                            variants={iconVariants}
-                            whileHover={{ 
-                                scale: 1.1,
-                                rotate: 5,
-                                transition: { duration: 0.3 }
-                            }}
-                        >
-                            <HeartIcon className="w-12 h-12 text-white" />
-                        </motion.div>
 
                         {/* Content */}
                         <motion.div 
@@ -87,7 +61,7 @@ export default function PhilanthropyPage() {
                             variants={containerVariants}
                         >
                             <motion.p 
-                                className="text-3xl md:text-4xl font-pacifico text-pblue"
+                                className="text-3xl md:text-4xl font-pacifico "
                                 variants={textVariants}
                             >
                                 At The Closet Clique, we believe that every closet has the power to give.
