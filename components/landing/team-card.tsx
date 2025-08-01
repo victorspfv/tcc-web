@@ -1,4 +1,3 @@
-import { Badge } from "@/components/ui/badge";
 import Image from "next/image";
 import React from "react";
 
@@ -24,11 +23,10 @@ export default function TeamCard({
         className="max-h-96 w-full rounded-md object-cover shadow-pblue"
     />
     <div className="flex flex-col items-start gap-4">
-        <Badge>{title}</Badge>
         <h2 className="text-2xl font-semibold font-pacifico text-balance md:max-w-lg lg:text-3xl">
-            {name}
+            {name}, {title}
         </h2>
-        <p className="text-muted-foreground md:max-w-lg">
+        <p className="text-muted-foreground md:max-w-lg text-xl">
             {description}
         </p>
     </div>

@@ -1,52 +1,154 @@
+"use client";
+
 import HeaderPage from "@/components/landing/header-page";
-import { HeartIcon } from "lucide-react";
+import { HeartIcon, Gift, Sparkles } from "lucide-react";
 import React from "react";
+import { motion } from "framer-motion";
+import CTA from "@/components/landing/cta";
+import Image from "next/image";
 
 export default function PhilanthropyPage() {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                duration: 0.8,
+                staggerChildren: 0.2
+            }
+        }
+    };
+
+    const itemVariants = {
+        hidden: { opacity: 0, y: 50 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.8
+            }
+        }
+    };
+
+    const iconVariants = {
+        hidden: { opacity: 0, scale: 0.8 },
+        visible: {
+            opacity: 1,
+            scale: 1,
+            transition: {
+                duration: 0.6,
+                delay: 0.2
+            }
+        }
+    };
+
+    const textVariants = {
+        hidden: { opacity: 0, y: 30 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: 0.8
+            }
+        }
+    };
+
     return (
         <main className="pt-[56px] lg:pt-[104px]">
             {/* Hero Section */}
             <HeaderPage title="Philanthropy" color="bg-pmint" />
 
             {/* Philanthropy Section */}
-            <section className="bg-background py-16 md:py-20 lg:py-32">
-            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="bg-gray-50 rounded-2xl p-8 md:p-12 shadow-lg">
-                    <div className="flex flex-col items-center gap-12">
+            <section className="bg-background py-16 md:py-20 lg:py-32 relative overflow-hidden">
+                <motion.div 
+                    className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, amount: 0.3 }}
+                >
+                    <div className="flex flex-col items-center justify-center gap-16">
                         {/* Icon */}
-                        <div className="w-20 h-20 bg-[#5CA1CB] rounded-full flex items-center justify-center">
-                            <HeartIcon className="w-10 h-10 text-white" />
-                        </div>
+                        <motion.div 
+                            className="w-24 h-24 bg-pblue rounded-full flex items-center justify-center border-1 border-black shadow-card"
+                            variants={iconVariants}
+                            whileHover={{ 
+                                scale: 1.1,
+                                rotate: 5,
+                                transition: { duration: 0.3 }
+                            }}
+                        >
+                            <HeartIcon className="w-12 h-12 text-white" />
+                        </motion.div>
 
                         {/* Content */}
-                        <div className="space-y-8 text-center max-w-3xl">
-                            <p className="text-2xl font-pacifico text-[#5CA1CB]">
+                        <motion.div 
+                            className="space-y-12 text-center max-w-4xl"
+                            variants={containerVariants}
+                        >
+                            <motion.p 
+                                className="text-3xl md:text-4xl font-pacifico text-pblue"
+                                variants={textVariants}
+                            >
                                 At The Closet Clique, we believe that every closet has the power to give.
-                            </p>
+                            </motion.p>
                             
-                            <div className="bg-white rounded-xl p-6 shadow-sm">
-                                <p className="text-lg leading-relaxed text-[#00486D]">
-                                    Each year during the holiday season, we host a community-wide Closet Cleanout, inviting girls to
-                                    donate gently loved clothing and accessories to support local charities serving women, teens and
-                                    families.
-                                </p>
-                            </div>
-                            
-                            <div className="bg-white rounded-xl p-6 shadow-sm">
-                                <p className="text-lg leading-relaxed text-[#00486D]">
-                                    It&apos;s our way of turning personal style into shared impact, clearing space in your closet while
-                                    making room for someone else to feel seen, confident and care for.
-                                </p>
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                                <motion.div 
+                                    className="bg-white rounded-2xl p-8 shadow-card border-1 border-black hover:shadow-hover transition"
+                                    variants={itemVariants}
+                                    whileHover={{ y: -5, transition: { duration: 0.3 } }}
+                                >
+                                    <div className="flex flex-col items-center gap-6">
+                                        <motion.div 
+                                            className="w-16 h-16 bg-pmint rounded-full flex items-center justify-center border-1 border-black shadow-sm"
+                                            whileHover={{ rotate: 10, scale: 1.05 }}
+                                        >
+                                            <Gift className="w-8 h-8 text-white" />
+                                        </motion.div>
+                                        <p className="text-lg leading-relaxed text-foreground">
+                                            Each year during the holiday season, we host a community-wide Closet Cleanout, inviting girls to
+                                            donate gently loved clothing and accessories to support local charities serving women, teens and
+                                            families.
+                                        </p>
+                                    </div>
+                                </motion.div>
+                                
+                                <motion.div 
+                                    className="bg-white rounded-2xl p-8 shadow-card border-1 border-black hover:shadow-hover transition"
+                                    variants={itemVariants}
+                                    whileHover={{ y: -5, transition: { duration: 0.3 } }}
+                                >
+                                    <div className="flex flex-col items-center gap-6">
+                                        <motion.div 
+                                            className="w-16 h-16 bg-ppink rounded-full flex items-center justify-center border-1 border-black shadow-sm"
+                                            whileHover={{ rotate: -10, scale: 1.05 }}
+                                        >
+                                            <Sparkles className="w-8 h-8 text-white" />
+                                        </motion.div>
+                                        <p className="text-lg leading-relaxed text-foreground">
+                                            It&apos;s our way of turning personal style into shared impact, clearing space in your closet while
+                                            making room for someone else to feel seen, confident and cared for.
+                                        </p>
+                                    </div>
+                                </motion.div>
                             </div>
 
-                            <p className="text-2xl font-pacifico text-[#E796BA]">
+                            <motion.p 
+                                className="text-3xl md:text-4xl font-pacifico text-ppink mt-8"
+                                variants={textVariants}
+                            >
                                 Because at The Closet Clique, we believe giving back is always in style.
-                            </p>
-                        </div>
+                            </motion.p>
+                        </motion.div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+                
+
             </section>
+            
+            {/* CTA Section */}
+            <CTA bgColor="bg-pmint" shadowColor="shadow-pmintHover" />
         </main>
     );
 }

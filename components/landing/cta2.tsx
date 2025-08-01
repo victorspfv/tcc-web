@@ -118,7 +118,7 @@ export default function CTA2({ bgColor, shadowColor }: { bgColor: string; shadow
                 className={`max-w-full overflow-hidden border-y border-border pt-10 md:pt-16 lg:pt-20 ${bgColor}`}
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.3 }}
+                viewport={{ once: true, amount: 0.1 }}
                 variants={containerVariants}>
                 <div className="relative container flex flex-col md:flex-row md:space-x-12">
                     <motion.div

@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-export default function CTA({ bgColor, shadowColor }: { bgColor: string, shadowColor: string }) {
+export default function CTA({ bgColor }: { bgColor: string, shadowColor: string }) {
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -136,7 +136,7 @@ export default function CTA({ bgColor, shadowColor }: { bgColor: string, shadowC
                                 <Button
                                     size="lg"
                                     className={`text-primary-foreground border-1 border-black rounded-2xl hover:bg-primary/90 font-bold px-10 py-6 shadow-card hover:shadow-hover transition ease-in-out ${bgColor}`}>
-                                    Get Early Access
+                                        Join the Waitlist
                                 </Button>
                             </motion.div>
                         </motion.div>

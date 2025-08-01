@@ -218,3 +218,21 @@
     text-shadow: 2px 2px 4px oklch(0.8148 0.0819 225.7537);;
   }
 }
+
+/* Global scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5CA1CB;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #E796BA;
+}

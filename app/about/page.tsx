@@ -282,6 +282,66 @@ export default function AboutPage() {
                     </motion.div>
                 </motion.div>
             </section>
+            <section className="bg-background py-16 md:py-20 lg:py-32">
+            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-pacifico leading-tight text-foreground mb-6">Our Logo</h2>
+
+                <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                    <div>
+                        <h3 className="text-2xl font-bold mb-4">The Key &amp; Keyhole</h3>
+                        <p className="text-lg leading-relaxed mb-4">
+                            Symbols of trust, access, and individuality.
+                        </p>
+                        <p className="leading-relaxed">
+                            The key represents the idea that every girl&apos;s unique ability to unlock her style, her
+                            story, and her place within a verified school network. The keyhole is the invitation to
+                            open the door to a secure, curated space where closets are shared with trusted peers.
+                        </p>
+                    </div>
+                    <div className="flex justify-center">
+                        <div className="flex items-center justify-center w-[200px] md:w-[300px] h-auto">
+                            <Image
+                                    width={1000}
+                                    height={1000}
+                                    src="/keyhole.svg"
+                                    alt="Logo"
+                                    className="w-full h-full object-cover"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <div className="space-y-12">
+                    <div>
+                        <h3 className="text-2xl font-bold mb-4">The Intertwined Double &apos;C&apos;</h3>
+                        <p className="text-lg leading-relaxed mb-2">Connection and community.</p>
+                        <p className="leading-relaxed">
+                            The double C in the Closet Clique is more than just a name. Two letters, looped
+                            together, forming something stronger than they could alone.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 className="text-2xl font-bold mb-4">The Twin &apos;M&apos;arks</h3>
+                        <p className="text-lg leading-relaxed mb-2">A reminder of your value.</p>
+                        <p className="leading-relaxed mb-2">
+                            The twin marks reflect self-worth, authenticity, and the inner glow that comes from
+                            knowing you have something to offer.
+                        </p>
+                        <p className="leading-relaxed">Every closet holds value. Every girl shines.</p>
+                    </div>
+
+                    <div>
+                        <h3 className="text-2xl font-bold mb-4">The &apos;F&apos; at the Bottom of the Key</h3>
+                        <p className="leading-relaxed">
+                            A nod to friendship and family. This subtle letter stands for the relationships that
+                            matter most. It&apos;s a tribute to the support systems that inspire, uplift, and connect us.
+                            They&apos;re the foundation of The Closet Clique.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
             <CTA bgColor="bg-ppurple" shadowColor="shadow-ppurpleHover" />
         </main>
     );
