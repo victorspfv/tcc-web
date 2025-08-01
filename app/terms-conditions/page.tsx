@@ -32,9 +32,9 @@ export default function TermsPage() {
 
                                     <div className="space-y-6 text-foreground">
                                         <p>
-                                            These Terms and Conditions ("Terms") govern your access to and use of The Closet Clique
-                                            mobile application and related services ("App" or "Platform"), owned and operated by The
-                                            Clique Collective LLC dba The Closet Clique ("we," "us," or "our"). By creating an account or
+                                            These Terms and Conditions (&quot;Terms&quot;) govern your access to and use of The Closet Clique
+                                            mobile application and related services (&quot;App&quot; or &quot;Platform&quot;), owned and operated by The
+                                            Clique Collective LLC dba The Closet Clique (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;). By creating an account or
                                             using the App, you agree to be bound by these Terms. If you do not agree, do not use the App.
                                         </p>
 
@@ -68,7 +68,7 @@ export default function TermsPage() {
                                             <h2 className="text-xl font-semibold">3. Rental & Sale Use</h2>
                                             <p className="mt-2">
                                                 Closet Owners may list fashion and lifestyle items for rent or resale, including clothing,
-                                                accessories, shoes, and items for dorms, apartments, or home living ("Living" category).
+                                                accessories, shoes, and items for dorms, apartments, or home living (&quot;Living&quot; category).
                                             </p>
                                             <p className="mt-4">
                                                 Renters and Buyers agree to:
@@ -77,7 +77,7 @@ export default function TermsPage() {
                                                 <li>Follow the 6-day rental period for rentals and calendar-based booking system</li>
                                                 <li>With respect to rentals, return items by the agreed date, in the condition received, with
                                                 normal wear and tear allowed</li>
-                                                <li>With respect to rentals, follow the owner's cleaning instructions</li>
+                                                <li>With respect to rentals, follow the owner&apos;s cleaning instructions</li>
                                                 <li>Coordinate pickup/drop-off via in-app messaging only</li>
                                             </ul>
                                             <p className="mt-4">
@@ -119,7 +119,7 @@ export default function TermsPage() {
                                             <p className="mt-2">
                                                 Rented items must be returned by the end of the 6-day rental window. If a renter needs more
                                                 time, they must contact the Closet Owner before the return date. A grace period may be
-                                                granted at the Closet Owner's discretion and must be clearly agreed upon via in-app
+                                                granted at the Closet Owner&apos;s discretion and must be clearly agreed upon via in-app
                                                 messaging. If an item is not returned and no grace period was granted, a formal complaint
                                                 may be submitted by the Closet Owner. Failure to return items in a timely manner may result
                                                 in a suspension, removal or termination of your account, at our sole discretion.
@@ -129,10 +129,10 @@ export default function TermsPage() {
                                         <div>
                                             <h2 className="text-xl font-semibold">8. Cleaning Responsibility</h2>
                                             <p className="mt-2">
-                                                Closet Owners must include clear cleaning instructions when listing an item (e.g., "dry clean
-                                                only" or "no cleaning required"). Renters are responsible for following these instructions. If
+                                                Closet Owners must include clear cleaning instructions when listing an item (e.g., &quot;dry clean
+                                                only&quot; or &quot;no cleaning required&quot;). Renters are responsible for following these instructions. If
                                                 an item is returned in violation of the cleaning expectations, the Closet Owner may file a
-                                                complaint via email. After three validated complaints, a renter's account may be suspended,
+                                                complaint via email. After three validated complaints, a renter&apos;s account may be suspended,
                                                 at our sole discretion.
                                             </p>
                                         </div>
@@ -171,7 +171,7 @@ export default function TermsPage() {
                                                 transactions, and platform activity. Message frequency varies. Message/data rates may apply.
                                             </p>
                                             <p className="mt-4">
-                                                To stop receiving texts, reply "STOP." For help, reply "HELP" or contact
+                                                To stop receiving texts, reply &quot;STOP.&quot; For help, reply &quot;HELP&quot; or contact
                                                 support@theclosetclique.com.
                                             </p>
                                         </div>
@@ -187,7 +187,7 @@ export default function TermsPage() {
                                         <div>
                                             <h2 className="text-xl font-semibold">13. Disclaimers</h2>
                                             <p className="mt-2">
-                                                The App and all services are provided "as is" without warranties of any kind. We do not
+                                                The App and all services are provided &quot;as is&quot; without warranties of any kind. We do not
                                                 guarantee uninterrupted access, platform availability, or protection from unauthorized use
                                                 by others.
                                             </p>
