@@ -63,7 +63,7 @@ export default function Header() {
                     <ul className="hidden md:flex space-x-6">
                         {menuItems.map(item => (
                             <li key={item.url}>
-                                <Link href={item.url} className={`rounded-md border shadow-none hover:border-black px-4 py-2 hover:border-1 ${colorVariants[item.shadow as keyof typeof colorVariants]} transition ease-in-out ${pathname === item.url ? activeColor[item.shadow as keyof typeof activeColor] : 'border-transparent'}`}>
+                                <Link href={item.url} className={`font-bold rounded-md border shadow-none hover:border-black px-4 py-2 hover:border-1 ${colorVariants[item.shadow as keyof typeof colorVariants]} transition ease-in-out ${pathname === item.url ? activeColor[item.shadow as keyof typeof activeColor] : 'border-transparent'}`}>
                                     {item.text.toUpperCase()}
                                 </Link>
                             </li>

@@ -358,7 +358,7 @@ export default function Welcome3() {
                                     scale: 1.1,
                                     transition: { duration: 0.3 },
                                 }}>
-                                <div className="w-30 h-30 bg-pred group-hover:bg-transparent rounded-full flex flex-col items-center justify-center gap-2">
+                                <div className="w-30 h-30 bg-primary group-hover:bg-transparent rounded-full flex flex-col items-center justify-center gap-2">
                                     <svg
                                         viewBox="0 0 422 518"
                                         fill="none"
