@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 
-export default function CTA2({ bgColor, shadowColor }: { bgColor: string; shadowColor: string }) {
+export default function CTA2({ bgColor }: { bgColor: string }) {
     const containerVariants = {
         hidden: { opacity: 0 },
         visible: {
@@ -61,30 +61,6 @@ export default function CTA2({ bgColor, shadowColor }: { bgColor: string; shadow
             scale: 1,
             transition: {
                 duration: 0.8,
-            },
-        },
-    };
-
-    const backPhoneVariants = {
-        ...phoneVariants,
-        visible: {
-            ...phoneVariants.visible,
-            rotateZ: -30,
-            transition: {
-                duration: 0.8,
-                delay: 0.1,
-            },
-        },
-    };
-
-    const middlePhoneVariants = {
-        ...phoneVariants,
-        visible: {
-            ...phoneVariants.visible,
-            rotateZ: -15,
-            transition: {
-                duration: 0.8,
-                delay: 0.2,
             },
         },
     };
@@ -180,7 +156,7 @@ export default function CTA2({ bgColor, shadowColor }: { bgColor: string; shadow
 
                             {/* Front phone */}
                             <motion.div
-                                className={`p-4 lg:p-18 absolute -translate-y-[6%] top-0 right-0 z-40 flex items-center justify-center overflow-clip rounded-4xl bg-accent shadow-card`}
+                                className={`p-4 lg:p-18 absolute -translate-y-[6%] top-0 right-0 z-40 flex items-center justify-center overflow-clip rounded-4xl bg-primary shadow-card`}
                                 variants={frontPhoneVariants}
                                 whileHover={{
                                     scale: 1.05,

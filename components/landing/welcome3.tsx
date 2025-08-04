@@ -317,10 +317,10 @@ export default function Welcome3() {
                                     scale: 1.1,
                                     transition: { duration: 0.3 },
                                 }}>
-                                <div className="w-30 h-30 bg-ppurple group-hover:bg-transparent rounded-full flex flex-col items-center justify-center gap-2">
-                                    <LockTcc className="text-white group-hover:text-ppurple w-10 h-10" />
-                                    <div className="font-bold text-white text-sm group-hover:text-ppurple">Private</div>
-                                    <div className="absolute -bottom-2 text-center text-ppurple text-xs font-bold opacity-0 group-hover:opacity-100">
+                                <div className="w-30 h-30 bg-pblue200 group-hover:bg-transparent rounded-full flex flex-col items-center justify-center gap-2">
+                                    <LockTcc className="text-white group-hover:text-pblue200 w-10 h-10" />
+                                    <div className="font-bold text-white text-sm group-hover:text-pblue200">Private</div>
+                                    <div className="absolute -bottom-2 text-center text-pblue200 text-xs font-bold opacity-0 group-hover:opacity-100">
                                         Exclusive to verified students.
                                     </div>
                                 </div>

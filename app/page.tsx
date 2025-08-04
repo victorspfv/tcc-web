@@ -8,7 +8,7 @@ export default function Home() {
         <main className="pt-[56px] lg:pt-[104px]">
             <Hero2 />
             <Welcome3 />
-            <CTA2 bgColor="bg-pblue" shadowColor="shadow-ppink" />
+            <CTA2 bgColor="bg-pblue"/>
             <Instagram />
         </main>
     );

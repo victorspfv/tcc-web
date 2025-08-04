@@ -3,7 +3,7 @@ import Image from "next/image";
 const ambassadorsImages = [
     {
         name: "Emelie",
-        image: "/assets/images/ambassadors/eimg1.webp",
+        image: "/assets/images/ambassadors/eimg3.webp",
     },
     {
         name: "Maya",

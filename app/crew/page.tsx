@@ -73,9 +73,8 @@ export default function CrewPage() {
                             <motion.div
                                 className="order-2 lg:order-1"
                                 variants={imageVariants}
-                                whileHover={{ scale: 1.02, rotate: 1 }}
                                 transition={{ duration: 0.3 }}>
-                                <div className="relative overflow-hidden rounded-2xl shadow-ppink bg-white p-4">
+                                <div className="relative overflow-hidden rounded-2xl shadow-pblue bg-white p-4">
                                     <Image
                                         width={600}
                                         height={800}
@@ -106,10 +105,10 @@ export default function CrewPage() {
                                     <motion.p
                                         className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl"
                                         variants={textVariants}>
-                                        Connector, party planner, proud girl mom, and founder of The Closet Clique, Mia
-                                        believes life is a series of moments worth celebrating—whether it&apos;s a
-                                        themed birthday dinner, a homecoming pre-party, or a weekly game of mahjong with
-                                        friends.
+                                        Connector, party planner, proud girl mom, and Co-Founder of The Closet Clique,
+                                        Mia believes life is a series of moments worth celebrating. Whether it is a
+                                        themed birthday dinner, a homecoming preparty, or a weekly game of mahjong with
+                                        friends, she is always finding ways to make everyday experiences more memorable.
                                     </motion.p>
 
                                     <motion.div variants={textVariants}>
@@ -164,9 +163,8 @@ export default function CrewPage() {
                             <motion.div
                                 className="order-2 lg:order-2"
                                 variants={imageVariants}
-                                whileHover={{ scale: 1.02, rotate: 1 }}
                                 transition={{ duration: 0.3 }}>
-                                <div className="relative overflow-hidden rounded-2xl shadow-ppink bg-white p-4">
+                                <div className="relative overflow-hidden rounded-2xl shadow-pblue bg-white p-4">
                                     <Image
                                         width={600}
                                         height={800}
@@ -305,7 +303,7 @@ export default function CrewPage() {
 
             <AmbassadorsGallery />
 
-            <CTA bgColor="bg-pyellow" shadowColor="shadow-pyellowHover" />
+            <CTA bgColor="bg-primary" shadowColor="shadow-primaryHover" />
         </main>
     );
 }

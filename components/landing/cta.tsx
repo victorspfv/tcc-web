@@ -103,7 +103,7 @@ export default function CTA({ bgColor }: { bgColor: string, shadowColor: string 
     return (
         <section>
             <motion.div 
-                className="max-w-full overflow-hidden border-y border-border bg-accent pt-10 md:pt-16 lg:pt-20"
+                className="max-w-full overflow-hidden border-y border-border bg-primary pt-10 md:pt-16 lg:pt-20"
                 initial="hidden"
                 whileInView="visible"
                 viewport={{ once: true, amount: 0.3 }}
@@ -135,7 +135,7 @@ export default function CTA({ bgColor }: { bgColor: string, shadowColor: string 
                             >
                                 <Button
                                     size="lg"
-                                    className={`text-primary-foreground border-1 border-black rounded-2xl hover:bg-primary/90 font-bold px-10 py-6 shadow-card hover:shadow-hover transition ease-in-out ${bgColor}`}>
+                                    className={`text-primary-foreground border-1 border-black rounded-2xl bg-secondary hover:bg-secondary font-bold px-10 py-6 shadow-card hover:shadow-hover transition ease-in-out`}>
                                         Join the Waitlist
                                 </Button>
                             </motion.div>

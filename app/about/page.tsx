@@ -12,9 +12,9 @@ export default function AboutPage() {
             opacity: 1,
             transition: {
                 duration: 0.8,
-                staggerChildren: 0.2
-            }
-        }
+                staggerChildren: 0.2,
+            },
+        },
     };
 
     const itemVariants = {
@@ -23,9 +23,9 @@ export default function AboutPage() {
             opacity: 1,
             y: 0,
             transition: {
-                duration: 0.8
-            }
-        }
+                duration: 0.8,
+            },
+        },
     };
 
     const imageVariants = {
@@ -34,9 +34,9 @@ export default function AboutPage() {
             opacity: 1,
             scale: 1,
             transition: {
-                duration: 0.6
-            }
-        }
+                duration: 0.6,
+            },
+        },
     };
 
     const textVariants = {
@@ -45,54 +45,54 @@ export default function AboutPage() {
             opacity: 1,
             x: 0,
             transition: {
-                duration: 0.8
-            }
-        }
+                duration: 0.8,
+            },
+        },
     };
 
     return (
         <main className="pt-[56px] lg:pt-[104px]">
             {/* Hero Section */}
             <HeaderPage title="About Us" color="bg-pblue700" />
-            
+
             {/* About Section */}
             <section className="bg-background py-16 md:py-20 lg:py-32">
-                <motion.div 
+                <motion.div
                     className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                >
+                    viewport={{ once: true, amount: 0.3 }}>
                     <div className="flex flex-col items-center justify-start gap-12 lg:gap-20 lg:flex-row">
                         {/* Mission Section */}
-                        <motion.div className="flex w-full flex-col items-start justify-start gap-8 md:gap-16 lg:w-1/2" variants={itemVariants}>
+                        <motion.div
+                            className="flex w-full flex-col items-start justify-start gap-8 md:gap-16 lg:w-1/2"
+                            variants={itemVariants}>
                             <motion.div className="space-y-6" variants={textVariants}>
-                                <motion.h2 
+                                <motion.h2
                                     className="text-4xl md:text-5xl lg:text-6xl font-pacifico leading-tight text-foreground"
-                                    variants={textVariants}
-                                >
+                                    variants={textVariants}>
                                     Our Mission
                                 </motion.h2>
-                                <motion.p 
+                                <motion.p
                                     className="text-lg md:text-xl text-muted-foreground leading-relaxed"
-                                    variants={textVariants}
-                                >
+                                    variants={textVariants}>
                                     The Closet Clique empowers girls through closet sharing by creating trusted,
                                     school-based communities that promote sustainability, style, and connection.
                                     It&apos;s an easy, fun way to access outfits for every occasion while encouraging
                                     young women to embrace entrepreneurship and community spirit.
                                 </motion.p>
                             </motion.div>
-                            
+
                             {/* Mission Images Grid */}
-                            <motion.div className="flex flex-col items-center justify-center gap-6 md:flex-row w-full" variants={itemVariants}>
+                            <motion.div
+                                className="flex flex-col items-center justify-center gap-6 md:flex-row w-full"
+                                variants={itemVariants}>
                                 <motion.div
                                     className="w-full md:w-1/2"
                                     variants={imageVariants}
                                     whileHover={{ scale: 1.02, y: -5 }}
-                                    transition={{ duration: 0.3 }}
-                                >
+                                    transition={{ duration: 0.3 }}>
                                     <div className="relative overflow-hidden rounded-2xl shadow-ppink border-1 border-ppink bg-white p-2">
                                         <Image
                                             width={400}
@@ -103,14 +103,15 @@ export default function AboutPage() {
                                         />
                                     </div>
                                 </motion.div>
-                                
-                                <motion.div className="flex w-full flex-col items-center justify-center gap-6 md:w-1/2" variants={itemVariants}>
+
+                                <motion.div
+                                    className="flex w-full flex-col items-center justify-center gap-6 md:w-1/2"
+                                    variants={itemVariants}>
                                     <motion.div
                                         variants={imageVariants}
                                         whileHover={{ scale: 1.02, rotate: 1 }}
-                                        transition={{ duration: 0.3 }}
-                                    >
-                                        <div className="relative overflow-hidden rounded-2xl shadow-pgreen border-1 border-pgreen bg-white p-2">
+                                        transition={{ duration: 0.3 }}>
+                                        <div className="relative overflow-hidden rounded-2xl shadow-pmint border-1 border-pmint bg-white p-2">
                                             <Image
                                                 width={300}
                                                 height={300}
@@ -120,13 +121,12 @@ export default function AboutPage() {
                                             />
                                         </div>
                                     </motion.div>
-                                    
+
                                     <motion.div
                                         variants={imageVariants}
                                         whileHover={{ scale: 1.02, rotate: -1 }}
                                         transition={{ duration: 0.3 }}
-                                        className="hidden md:block"
-                                    >
+                                        className="hidden md:block">
                                         <div className="relative overflow-hidden rounded-2xl shadow-pblue border-1 border-pblue bg-white p-2">
                                             <Image
                                                 width={300}
@@ -142,16 +142,19 @@ export default function AboutPage() {
                         </motion.div>
 
                         {/* Vision Section */}
-                        <motion.div className="flex w-full flex-col items-center justify-center gap-12 lg:w-1/2" variants={itemVariants}>
+                        <motion.div
+                            className="flex w-full flex-col items-center justify-center gap-12 lg:w-1/2"
+                            variants={itemVariants}>
                             {/* Vision Images Grid */}
-                            <motion.div className="flex flex-col items-center justify-center gap-6 md:flex-row w-full" variants={itemVariants}>
+                            <motion.div
+                                className="flex flex-col items-center justify-center gap-6 md:flex-row w-full"
+                                variants={itemVariants}>
                                 <motion.div
                                     className="w-full md:w-1/2"
                                     variants={imageVariants}
                                     whileHover={{ scale: 1.02, y: -5 }}
-                                    transition={{ duration: 0.3 }}
-                                >
-                                    <div className="relative overflow-hidden rounded-2xl shadow-ppurple border-1 border-ppurple bg-white p-2">
+                                    transition={{ duration: 0.3 }}>
+                                    <div className="relative overflow-hidden rounded-2xl shadow-pblue700 border-1 border-ppurple bg-white p-2">
                                         <Image
                                             width={400}
                                             height={400}
@@ -161,14 +164,15 @@ export default function AboutPage() {
                                         />
                                     </div>
                                 </motion.div>
-                                
-                                <motion.div className="flex w-full flex-col items-center justify-center gap-6 md:w-1/2" variants={itemVariants}>
+
+                                <motion.div
+                                    className="flex w-full flex-col items-center justify-center gap-6 md:w-1/2"
+                                    variants={itemVariants}>
                                     <motion.div
                                         variants={imageVariants}
                                         whileHover={{ scale: 1.02, rotate: 2 }}
                                         transition={{ duration: 0.3 }}
-                                        className="hidden md:block"
-                                    >
+                                        className="hidden md:block">
                                         <div className="relative overflow-hidden rounded-2xl shadow-pyellow border-1 border-pyellow bg-white p-2">
                                             <Image
                                                 width={300}
@@ -179,13 +183,12 @@ export default function AboutPage() {
                                             />
                                         </div>
                                     </motion.div>
-                                    
+
                                     <motion.div
                                         variants={imageVariants}
                                         whileHover={{ scale: 1.02, rotate: -2 }}
-                                        transition={{ duration: 0.3 }}
-                                    >
-                                        <div className="relative overflow-hidden rounded-2xl shadow-pred border-1 border-pred bg-white p-2">
+                                        transition={{ duration: 0.3 }}>
+                                        <div className="relative overflow-hidden rounded-2xl shadow-pblue200 border-1 border-pblue200 bg-white p-2">
                                             <Image
                                                 width={300}
                                                 height={400}
@@ -197,18 +200,16 @@ export default function AboutPage() {
                                     </motion.div>
                                 </motion.div>
                             </motion.div>
-                            
+
                             <motion.div className="space-y-6 text-center lg:text-left" variants={textVariants}>
-                                <motion.h2 
+                                <motion.h2
                                     className="text-4xl md:text-5xl lg:text-6xl font-pacifico leading-tight text-foreground"
-                                    variants={textVariants}
-                                >
+                                    variants={textVariants}>
                                     Our Vision
                                 </motion.h2>
-                                <motion.p 
+                                <motion.p
                                     className="text-lg md:text-xl text-muted-foreground leading-relaxed"
-                                    variants={textVariants}
-                                >
+                                    variants={textVariants}>
                                     We aim to become the go-to closet-sharing platform for high school and college girls
                                     nationwide where closets are connected, style is circular, and trust comes from
                                     community. We envision a world where dressing up doesn&apos;t mean buying new, but
@@ -222,24 +223,21 @@ export default function AboutPage() {
 
             {/* Values Section */}
             <section className="bg-white py-16 md:py-20 lg:py-32">
-                <motion.div 
+                <motion.div
                     className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
                     variants={containerVariants}
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}
-                >
+                    viewport={{ once: true, amount: 0.3 }}>
                     <motion.div className="text-center mb-16" variants={itemVariants}>
-                        <motion.h2 
+                        <motion.h2
                             className="text-4xl md:text-5xl lg:text-6xl font-pacifico leading-tight text-foreground mb-6"
-                            variants={textVariants}
-                        >
+                            variants={textVariants}>
                             Our Values
                         </motion.h2>
-                        <motion.p 
+                        <motion.p
                             className="text-lg md:text-2xl text-foreground max-w-3xl mx-auto"
-                            variants={textVariants}
-                        >
+                            variants={textVariants}>
                             The principles that guide everything we do at The Closet Clique
                         </motion.p>
                     </motion.div>
@@ -248,31 +246,32 @@ export default function AboutPage() {
                         {[
                             {
                                 title: "Community",
-                                description: "Building trusted networks where girls can connect and share safely within their school communities.",
-                                color: "bg-primary"
+                                description:
+                                    "Building trusted networks where girls can connect and share safely within their school communities.",
+                                color: "bg-primary",
                             },
                             {
-                                title: "Sustainability", 
-                                description: "Promoting circular fashion by giving clothes a second life and reducing environmental impact.",
-                                color: "bg-pyellow"
+                                title: "Sustainability",
+                                description:
+                                    "Promoting circular fashion by giving clothes a second life and reducing environmental impact.",
+                                color: "bg-pyellow",
                             },
                             {
                                 title: "Empowerment",
-                                description: "Encouraging young women to become entrepreneurs while expressing their unique style and creativity.",
-                                color: "bg-ppurple"
-                            }
+                                description:
+                                    "Encouraging young women to become entrepreneurs while expressing their unique style and creativity.",
+                                color: "bg-pblue200",
+                            },
                         ].map((value, index) => (
                             <motion.div
                                 key={index}
                                 className="bg-white rounded-2xl p-8 shadow-card hover:shadow-hover border-1 border-black transition group"
                                 variants={itemVariants}
-                                transition={{ duration: 0.3 }}
-                            >
-                                <motion.div 
+                                transition={{ duration: 0.3 }}>
+                                <motion.div
                                     className={`w-16 h-16 ${value.color} rounded-2xl flex items-center justify-center mb-6 mx-auto shadow-card1 group-hover:shadow-card border-1 border-black transition`}
                                     whileHover={{ rotate: 5, scale: 1.1 }}
-                                    transition={{ duration: 0.3 }}
-                                >
+                                    transition={{ duration: 0.3 }}>
                                     <span className="text-2xl font-bold text-white">{value.title[0]}</span>
                                 </motion.div>
                                 <h3 className="text-2xl font-bold text-foreground mb-4 text-center">{value.title}</h3>
@@ -282,66 +281,67 @@ export default function AboutPage() {
                     </motion.div>
                 </motion.div>
             </section>
-            <section className="bg-background py-16 md:py-20 lg:py-32">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-pacifico leading-tight text-foreground mb-6">Our Logo</h2>
 
-                <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-                    <div>
-                        <h3 className="text-2xl font-bold mb-4">The Key &amp; Keyhole</h3>
-                        <p className="text-lg leading-relaxed mb-4">
-                            Symbols of trust, access, and individuality.
-                        </p>
-                        <p className="leading-relaxed">
-                            The key represents the idea that every girl&apos;s unique ability to unlock her style, her
-                            story, and her place within a verified school network. The keyhole is the invitation to
-                            open the door to a secure, curated space where closets are shared with trusted peers.
-                        </p>
-                    </div>
-                    <div className="flex justify-center">
-                        <div className="flex items-center justify-center w-[200px] md:w-[300px] h-auto">
-                            <Image
+            <section className="bg-background py-16 md:py-20 lg:py-32">
+                <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-pacifico leading-tight text-foreground mb-6">
+                        Our Logo
+                    </h2>
+
+                    <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                        <div>
+                            <h3 className="text-2xl font-bold mb-4">The Key &amp; Keyhole</h3>
+                            <p className="text-lg leading-relaxed mb-4">Symbols of trust, access, and individuality.</p>
+                            <p className="leading-relaxed">
+                                The key represents the idea that every girl&apos;s unique ability to unlock her style,
+                                her story, and her place within a verified school network. The keyhole is the invitation
+                                to open the door to a secure, curated space where closets are shared with trusted peers.
+                            </p>
+                        </div>
+                        <div className="flex justify-center">
+                            <div className="flex items-center justify-center w-[200px] md:w-[300px] h-auto">
+                                <Image
                                     width={1000}
                                     height={1000}
                                     src="/keyhole.svg"
                                     alt="Logo"
                                     className="w-full h-full object-cover"
-                            />
+                                />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="space-y-12">
+                        <div>
+                            <h3 className="text-2xl font-bold mb-4">The Intertwined Double &apos;C&apos;</h3>
+                            <p className="text-lg leading-relaxed mb-2">Connection and community.</p>
+                            <p className="leading-relaxed">
+                                The double C in the Closet Clique is more than just a name. Two letters, looped
+                                together, forming something stronger than they could alone.
+                            </p>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold mb-4">The Twin &apos;M&apos;arks</h3>
+                            <p className="text-lg leading-relaxed mb-2">A reminder of your value.</p>
+                            <p className="leading-relaxed mb-2">
+                                The twin marks reflect self-worth, authenticity, and the inner glow that comes from
+                                knowing you have something to offer.
+                            </p>
+                            <p className="leading-relaxed">Every closet holds value. Every girl shines.</p>
+                        </div>
+
+                        <div>
+                            <h3 className="text-2xl font-bold mb-4">The &apos;F&apos; at the Bottom of the Key</h3>
+                            <p className="leading-relaxed">
+                                A nod to friendship and family. This subtle letter stands for the relationships that
+                                matter most. It&apos;s a tribute to the support systems that inspire, uplift, and
+                                connect us. They&apos;re the foundation of The Closet Clique.
+                            </p>
                         </div>
                     </div>
                 </div>
-
-                <div className="space-y-12">
-                    <div>
-                        <h3 className="text-2xl font-bold mb-4">The Intertwined Double &apos;C&apos;</h3>
-                        <p className="text-lg leading-relaxed mb-2">Connection and community.</p>
-                        <p className="leading-relaxed">
-                            The double C in the Closet Clique is more than just a name. Two letters, looped
-                            together, forming something stronger than they could alone.
-                        </p>
-                    </div>
-
-                    <div>
-                        <h3 className="text-2xl font-bold mb-4">The Twin &apos;M&apos;arks</h3>
-                        <p className="text-lg leading-relaxed mb-2">A reminder of your value.</p>
-                        <p className="leading-relaxed mb-2">
-                            The twin marks reflect self-worth, authenticity, and the inner glow that comes from
-                            knowing you have something to offer.
-                        </p>
-                        <p className="leading-relaxed">Every closet holds value. Every girl shines.</p>
-                    </div>
-
-                    <div>
-                        <h3 className="text-2xl font-bold mb-4">The &apos;F&apos; at the Bottom of the Key</h3>
-                        <p className="leading-relaxed">
-                            A nod to friendship and family. This subtle letter stands for the relationships that
-                            matter most. It&apos;s a tribute to the support systems that inspire, uplift, and connect us.
-                            They&apos;re the foundation of The Closet Clique.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
             <CTA bgColor="bg-ppurple" shadowColor="shadow-ppurpleHover" />
         </main>
     );
