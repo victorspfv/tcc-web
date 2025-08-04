@@ -160,7 +160,7 @@ export default function CTA({ bgColor }: { bgColor: string, shadowColor: string 
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/assets/images/mock1.png"
+                                    src="/assets/images/mocks/profile-screen.png"
                                     alt="Phone"
                                     width={320}
                                     height={600}
@@ -181,7 +181,7 @@ export default function CTA({ bgColor }: { bgColor: string, shadowColor: string 
                                 transition={{ duration: 0.3 }}
                             >
                                 <Image
-                                    src="/assets/images/mock1.png"
+                                    src="/assets/images/mocks/main-screen.png"
                                     alt="Phone"
                                     width={320}
                                     height={600}
@@ -215,7 +215,7 @@ export default function CTA({ bgColor }: { bgColor: string, shadowColor: string 
                                     }}
                                 >
                                     <Image
-                                        src="/assets/images/mock1.png"
+                                        src="/assets/images/mocks/details-screen.png"
                                         alt="Phone"
                                         width={320}
                                         height={600}

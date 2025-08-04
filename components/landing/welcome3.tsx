@@ -144,7 +144,7 @@ export default function Welcome3() {
 
                     {/* Phone Frame */}
                     <motion.div variants={phoneVariants} className="relative w-80 mx-auto">
-                        <Image loading="lazy" src="/assets/dark.png" alt="Phone" width={320} height={600} />
+                        <Image loading="lazy" src="/assets/images/mocks/main-screen.png" alt="Phone" width={320} height={600} />
                     </motion.div>
 
                     {/* Floating Circles */}

@@ -175,7 +175,7 @@ export default function CTA2({ bgColor }: { bgColor: string }) {
                                         ease: "easeInOut",
                                     }}>
                                     <Image
-                                        src="/assets/images/mock1.png"
+                                        src="/assets/images/mocks/main-screen.png"
                                         alt="Phone"
                                         width={320}
                                         height={600}
