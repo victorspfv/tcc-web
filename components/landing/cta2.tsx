@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
-import MainTemp2 from "@/public/assets/images/mocks/main-temp2-screen.png";
+import MainTemp2 from "@/public/assets/images/mocks/main-temp3-screen.png";
 
 export default function CTA2({ bgColor }: { bgColor: string }) {
     const containerVariants = {
