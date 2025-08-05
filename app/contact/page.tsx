@@ -2,11 +2,11 @@
 
 import HeaderPage from "@/components/landing/header-page";
 import { motion } from "framer-motion";
-import CTA from "@/components/landing/cta";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import CTA2 from "@/components/landing/cta2";
 
 export default function ContactPage() {
     const containerVariants = {
@@ -134,7 +134,7 @@ export default function ContactPage() {
             </section>
 
             {/* CTA Section */}
-            <CTA bgColor="bg-ppink" shadowColor="shadow-ppinkHover" />
+            <CTA2 bgColor="bg-pblue" />
         </main>
     );
 }

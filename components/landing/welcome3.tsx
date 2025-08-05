@@ -99,20 +99,19 @@ export default function Welcome3() {
                     <motion.h2
                         className="mt-6 text-center text-4xl tracking-tighter lg:text-7xl font-pacifico"
                         variants={itemVariants}>
-                        Join the Clique, Share the Looks!
+                        Join the Clique, Share the Looks
                     </motion.h2>
                     <motion.p
                         className="mx-auto mt-6 max-w-4xl text-center text-lg text-muted-foreground md:text-2xl"
                         variants={itemVariants}>
                         <strong>The Closet Clique</strong> is your go-to app for <strong>renting and reselling</strong>{" "}
-                        outfits within your <strong>high school</strong> or
+                        outfits within your <strong>high school</strong> or{" "}
                         <strong>college community</strong>. Each <strong>verified school network</strong>, aka your{" "}
                         <strong>Clique</strong>, is a <strong>private space</strong> where girls can{" "}
                         <strong>post items</strong> from their own closets to <strong>rent or resell</strong>,{" "}
-                        <strong>earn cash</strong>, and <strong>browse looks</strong> from
+                        <strong>earn cash</strong>, and <strong>browse looks</strong> from{" "}
                         <strong>friends (and friends of friends)</strong>. Whether you&apos;re getting ready for a{" "}
-                        <strong>formal</strong>, <strong>game day</strong>, or
-                        <strong>weekend plans</strong>, it&apos;s like having a <strong>shared closet</strong> with your
+                        <strong>formal</strong>, <strong>game day</strong>, or <strong>weekend plans</strong>, it&apos;s like having a <strong>shared closet</strong> with your
                         entire <strong>campus</strong>. We&apos;re launching first in our{" "}
                         <strong>hometown in Dallas</strong> with select high schools and we&apos;ve got our sights set
                         BIG on <strong>college campuses nationwide</strong>.
@@ -270,7 +269,7 @@ export default function Welcome3() {
                                         Convenient
                                     </div>
                                     <div className="absolute -bottom-6 text-center text-pmint text-xs font-bold opacity-0 group-hover:opacity-100">
-                                    Easy local handoffs. No shipping. Delete your way.
+                                    Easy local handoffs. No shipping.
                                     </div>
                                 </div>
                             </motion.div>

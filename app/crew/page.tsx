@@ -4,7 +4,7 @@ import Image from "next/image";
 import HeaderPage from "@/components/landing/header-page";
 import React from "react";
 import { motion } from "framer-motion";
-import CTA from "@/components/landing/cta";
+import CTA2 from "@/components/landing/cta2";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ArrowRight } from "lucide-react";
 import TeamCard from "@/components/landing/team-card";
@@ -315,7 +315,7 @@ export default function CrewPage() {
 
             <AmbassadorsGallery />
 
-            <CTA bgColor="bg-primary" shadowColor="shadow-primaryHover" />
+            <CTA2 bgColor="bg-pblue" />
         </main>
     );
 }

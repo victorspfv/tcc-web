@@ -3,7 +3,7 @@
 import HeaderPage from "@/components/landing/header-page";
 import { Gift, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
-import CTA from "@/components/landing/cta";
+import CTA2 from "@/components/landing/cta2";
 
 export default function PhilanthropyPage() {
     const containerVariants = {
@@ -122,7 +122,7 @@ export default function PhilanthropyPage() {
             </section>
             
             {/* CTA Section */}
-            <CTA bgColor="bg-pmint" shadowColor="shadow-pmintHover" />
+            <CTA2 bgColor="bg-pblue" />
         </main>
     );
 }
