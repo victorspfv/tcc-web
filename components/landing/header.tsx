@@ -19,6 +19,7 @@ export default function Header() {
 
     const colorVariants = {
         pblue: "hover:shadow-pblue hover:text-pblue",
+        pblue200: "hover:shadow-pblue200 hover:text-pblue200",
         pblue700: "hover:shadow-pblue700 hover:text-pblue700",
         pgreen: "hover:shadow-pgreen hover:text-pgreen",
         ppink: "hover:shadow-ppink hover:text-ppink",
@@ -28,6 +29,7 @@ export default function Header() {
     };
     const activeColor = {
         pblue: "border-black text-pblue shadow-pblue",
+        pblue200: "border-black text-pblue200 shadow-pblue200",
         pblue700: "border-black text-pblue700 shadow-pblue700",
         pgreen: "border-black text-pgreen shadow-pgreen",
         ppink: "border-black text-ppink shadow-ppink",

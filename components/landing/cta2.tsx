@@ -4,6 +4,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
+import MainTemp2 from "@/public/assets/images/mocks/main-temp2-screen.png";
 
 export default function CTA2({ bgColor }: { bgColor: string }) {
     const containerVariants = {
@@ -108,7 +109,7 @@ export default function CTA2({ bgColor }: { bgColor: string }) {
                         <motion.p
                             className="mb-8 mt-6 max-w-2xl text-lg text-foreground md:text-2xl"
                             variants={contentVariants}>
-                            Coming soon to the App Store. We are building something amazing. Stay tuned for updates!
+                            Coming soon to the <strong>App Store</strong>. We are building something amazing. Stay tuned for updates.
                         </motion.p>
 
                         <motion.ul className="flex flex-col gap-4 md:gap-6 mb-8">
@@ -175,11 +176,15 @@ export default function CTA2({ bgColor }: { bgColor: string }) {
                                         ease: "easeInOut",
                                     }}>
                                     <Image
-                                        src="/assets/images/mocks/main-screen.png"
+                                        src={MainTemp2}
                                         alt="Phone"
-                                        width={320}
-                                        height={600}
+                                        placeholder="blur"
+                                        quality={100}
                                         className="rounded-3xl"
+                                        style={{
+                                            width: '320px',
+                                            height: 'auto',
+                                          }}
                                     />
                                 </motion.div>
                             </motion.div>

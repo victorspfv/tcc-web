@@ -14,7 +14,7 @@ export const menuItems: IMenuItem[] = [
     {
         text: "Clique Crew",
         url: "/crew",
-        shadow: "pyellow"
+        shadow: "pblue200"
     },
     {
         text: "Philanthropy ",

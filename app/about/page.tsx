@@ -3,7 +3,7 @@
 import Image from "next/image";
 import HeaderPage from "@/components/landing/header-page";
 import { motion } from "framer-motion";
-import CTA from "@/components/landing/cta";
+import CTA2 from "@/components/landing/cta2";
 
 export default function AboutPage() {
     const containerVariants = {
@@ -95,9 +95,10 @@ export default function AboutPage() {
                                     transition={{ duration: 0.3 }}>
                                     <div className="relative overflow-hidden rounded-2xl shadow-ppink border-1 border-ppink bg-white p-2">
                                         <Image
+                                            priority
                                             width={400}
                                             height={600}
-                                            src="/assets/images/img1.webp"
+                                            src="/assets/images/about/about1.webp"
                                             alt="Mission image 1"
                                             className="aspect-[0.7] w-full object-cover rounded-xl"
                                         />
@@ -113,9 +114,10 @@ export default function AboutPage() {
                                         transition={{ duration: 0.3 }}>
                                         <div className="relative overflow-hidden rounded-2xl shadow-pmint border-1 border-pmint bg-white p-2">
                                             <Image
+                                                priority
                                                 width={300}
                                                 height={300}
-                                                src="/assets/images/img2.webp"
+                                                src="/assets/images/about/about2.webp"
                                                 alt="Mission image 2"
                                                 className="aspect-[1.1] w-full object-cover rounded-xl"
                                             />
@@ -129,9 +131,10 @@ export default function AboutPage() {
                                         className="hidden md:block">
                                         <div className="relative overflow-hidden rounded-2xl shadow-pblue border-1 border-pblue bg-white p-2">
                                             <Image
+                                                priority
                                                 width={300}
                                                 height={400}
-                                                src="/assets/images/img3.webp"
+                                                src="/assets/images/about/about3.webp"
                                                 alt="Mission image 3"
                                                 className="aspect-[0.7] w-full object-cover rounded-xl"
                                             />
@@ -156,9 +159,10 @@ export default function AboutPage() {
                                     transition={{ duration: 0.3 }}>
                                     <div className="relative overflow-hidden rounded-2xl shadow-pblue700 border-1 border-ppurple bg-white p-2">
                                         <Image
+                                            priority
                                             width={400}
                                             height={400}
-                                            src="/assets/images/img4.webp"
+                                            src="/assets/images/about/about4.webp"
                                             alt="Vision image 1"
                                             className="aspect-[0.9] w-full object-cover rounded-xl"
                                         />
@@ -175,9 +179,10 @@ export default function AboutPage() {
                                         className="hidden md:block">
                                         <div className="relative overflow-hidden rounded-2xl shadow-pyellow border-1 border-pyellow bg-white p-2">
                                             <Image
+                                                priority
                                                 width={300}
                                                 height={400}
-                                                src="/assets/images/img5.webp"
+                                                src="/assets/images/about/about2.webp"
                                                 alt="Vision image 2"
                                                 className="aspect-[0.8] w-full object-cover rounded-xl"
                                             />
@@ -190,9 +195,10 @@ export default function AboutPage() {
                                         transition={{ duration: 0.3 }}>
                                         <div className="relative overflow-hidden rounded-2xl shadow-pblue200 border-1 border-pblue200 bg-white p-2">
                                             <Image
+                                                priority
                                                 width={300}
                                                 height={400}
-                                                src="/assets/images/img6.webp"
+                                                src="/assets/images/about/about5.webp"
                                                 alt="Vision image 3"
                                                 className="aspect-[0.9] w-full object-cover rounded-xl"
                                             />
@@ -322,7 +328,7 @@ export default function AboutPage() {
                         </div>
 
                         <div>
-                            <h3 className="text-2xl font-bold mb-4">The Twin &apos;M&apos;arks</h3>
+                            <h3 className="text-2xl font-bold mb-4">The Twin Marks</h3>
                             <p className="text-lg leading-relaxed mb-2">A reminder of your value.</p>
                             <p className="leading-relaxed mb-2">
                                 The twin marks reflect self-worth, authenticity, and the inner glow that comes from
@@ -342,7 +348,7 @@ export default function AboutPage() {
                     </div>
                 </div>
             </section>
-            <CTA bgColor="bg-ppurple" shadowColor="shadow-ppurpleHover" />
+            <CTA2 bgColor="bg-pblue" />
         </main>
     );
 }

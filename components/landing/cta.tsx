@@ -215,7 +215,7 @@ export default function CTA({ bgColor }: { bgColor: string, shadowColor: string 
                                     }}
                                 >
                                     <Image
-                                        src="/assets/images/mocks/details-screen.png"
+                                        src="/assets/images/mocks/main-temp2-screen.png"
                                         alt="Phone"
                                         width={320}
                                         height={600}

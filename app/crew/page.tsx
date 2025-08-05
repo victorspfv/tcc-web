@@ -10,6 +10,10 @@ import { ArrowRight } from "lucide-react";
 import TeamCard from "@/components/landing/team-card";
 import AmbassadorsGallery from "@/components/landing/ambassadors-gallery";
 
+import Mia from "@/public/assets/images/founders/mia.webp";
+import Andrea from "@/public/assets/images/founders/andrea-nayfa.webp";
+
+
 export default function CrewPage() {
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -57,7 +61,7 @@ export default function CrewPage() {
 
     return (
         <main className="pt-[56px] lg:pt-[104px]">
-            <HeaderPage title="Introducing the Clique Crew" color="bg-pyellow" />
+            <HeaderPage title="Introducing the Clique Crew" color="bg-pblue200" />
 
             {/* Founder Section */}
             <section className="bg-background py-16 md:py-20 lg:py-32">
@@ -76,9 +80,12 @@ export default function CrewPage() {
                                 transition={{ duration: 0.3 }}>
                                 <div className="relative overflow-hidden rounded-2xl shadow-pblue bg-white p-4">
                                     <Image
+                                        priority
                                         width={600}
                                         height={800}
-                                        src="/assets/images/founders/mia.webp"
+                                        src={Mia}
+                                        placeholder="blur"
+                                        quality={100}
                                         alt="Mia Taraszki - Founder"
                                         className="aspect-square w-full rounded-xl object-cover"
                                     />
@@ -166,11 +173,16 @@ export default function CrewPage() {
                                 transition={{ duration: 0.3 }}>
                                 <div className="relative overflow-hidden rounded-2xl shadow-pblue bg-white p-4">
                                     <Image
-                                        width={600}
-                                        height={800}
-                                        src="/assets/images/founders/andrea-nayfa.webp"
+                                        priority
+                                        src={Andrea}
+                                        placeholder="blur"
+                                        quality={100}
                                         alt="Andrea Nayfa - Co-Founder"
-                                        className="aspect-square w-full rounded-xl object-cover"
+                                        className="aspect-square w-full rounded-xl"
+                                        style={{
+                                            width: '100%',
+                                            height: 'auto',
+                                        }}
                                     />
                                 </div>
                             </motion.div>

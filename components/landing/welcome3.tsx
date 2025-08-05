@@ -11,6 +11,8 @@ import CheckTcc from "@/components/icons/check-tcc";
 import EarnTcc from "@/components/icons/earn-tcc";
 import CalendarTcc from "@/components/icons/calendar-tcc";
 
+import MainTemp2 from "@/public/assets/images/mocks/main-temp2-screen.png";
+
 export default function Welcome3() {
     const containerVariants = {
         hidden: { opacity: 0 },
@@ -102,13 +104,18 @@ export default function Welcome3() {
                     <motion.p
                         className="mx-auto mt-6 max-w-4xl text-center text-lg text-muted-foreground md:text-2xl"
                         variants={itemVariants}>
-                        The Closet Clique is your go-to app for renting and reselling outfits within your high school or
-                        college community. Each verified school network, aka your Clique, is a private space where girls
-                        can post items from their own closets to rent or resell, earn cash, and browse looks from
-                        friends (and friends of friends). Whether you&apos;re getting ready for a formal, game day, or
-                        weekend plans, it&apos;s like having a shared closet with your entire campus. We&apos;re
-                        launching first in our hometown in Dallas with select high schools and we&apos;ve got our sights
-                        set BIG on college campuses nationwide.
+                        <strong>The Closet Clique</strong> is your go-to app for <strong>renting and reselling</strong>{" "}
+                        outfits within your <strong>high school</strong> or
+                        <strong>college community</strong>. Each <strong>verified school network</strong>, aka your{" "}
+                        <strong>Clique</strong>, is a <strong>private space</strong> where girls can{" "}
+                        <strong>post items</strong> from their own closets to <strong>rent or resell</strong>,{" "}
+                        <strong>earn cash</strong>, and <strong>browse looks</strong> from
+                        <strong>friends (and friends of friends)</strong>. Whether you&apos;re getting ready for a{" "}
+                        <strong>formal</strong>, <strong>game day</strong>, or
+                        <strong>weekend plans</strong>, it&apos;s like having a <strong>shared closet</strong> with your
+                        entire <strong>campus</strong>. We&apos;re launching first in our{" "}
+                        <strong>hometown in Dallas</strong> with select high schools and we&apos;ve got our sights set
+                        BIG on <strong>college campuses nationwide</strong>.
                     </motion.p>
                     <motion.p
                         className="mx-auto mt-6 max-w-4xl text-center text-lg text-primary font-semibold md:text-2xl"
@@ -144,7 +151,7 @@ export default function Welcome3() {
 
                     {/* Phone Frame */}
                     <motion.div variants={phoneVariants} className="relative w-80 mx-auto">
-                        <Image loading="lazy" src="/assets/images/mocks/main-screen.png" alt="Phone" width={320} height={600} />
+                        <Image loading="lazy" src={MainTemp2} alt="Phone" placeholder="blur" quality={100} />
                     </motion.div>
 
                     {/* Floating Circles */}
@@ -262,8 +269,8 @@ export default function Welcome3() {
                                     <div className="font-bold text-white text-sm group-hover:text-pmint">
                                         Convenient
                                     </div>
-                                    <div className="absolute -bottom-2 text-center text-pmint text-xs font-bold opacity-0 group-hover:opacity-100">
-                                        Easy local handoffs your way.
+                                    <div className="absolute -bottom-6 text-center text-pmint text-xs font-bold opacity-0 group-hover:opacity-100">
+                                    Easy local handoffs. No shipping. Delete your way.
                                     </div>
                                 </div>
                             </motion.div>
@@ -319,7 +326,9 @@ export default function Welcome3() {
                                 }}>
                                 <div className="w-30 h-30 bg-pblue200 group-hover:bg-transparent rounded-full flex flex-col items-center justify-center gap-2">
                                     <LockTcc className="text-white group-hover:text-pblue200 w-10 h-10" />
-                                    <div className="font-bold text-white text-sm group-hover:text-pblue200">Private</div>
+                                    <div className="font-bold text-white text-sm group-hover:text-pblue200">
+                                        Private
+                                    </div>
                                     <div className="absolute -bottom-2 text-center text-pblue200 text-xs font-bold opacity-0 group-hover:opacity-100">
                                         Exclusive to verified students.
                                     </div>
