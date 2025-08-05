@@ -11,7 +11,7 @@ import CheckTcc from "@/components/icons/check-tcc";
 import EarnTcc from "@/components/icons/earn-tcc";
 import CalendarTcc from "@/components/icons/calendar-tcc";
 
-import MainTemp2 from "@/public/assets/images/mocks/main-temp3-screen.png";
+import MainTemp2 from "@/public/assets/images/mocks/main-temp2-screen.png";
 
 export default function Welcome3() {
     const containerVariants = {
