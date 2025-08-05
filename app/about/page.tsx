@@ -182,7 +182,7 @@ export default function AboutPage() {
                                                 priority
                                                 width={300}
                                                 height={400}
-                                                src="/assets/images/about/about2.webp"
+                                                src="/assets/images/about/about6.webp"
                                                 alt="Vision image 2"
                                                 className="aspect-[0.8] w-full object-cover rounded-xl"
                                             />
