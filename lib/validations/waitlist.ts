@@ -1,6 +1,10 @@
 import { z } from "zod";
 
 export const waitlistSchema = z.object({
-    email: z.email("Please enter a valid email address").trim().toLowerCase(),
-    name: z.string().min(1, "Please enter your name"),
+    email: z
+        .string()
+        .trim()
+        .toLowerCase()
+        .email({ message: "Please enter a valid email address" }),
+    name: z.string().min(1, { message: "Please enter your name" }),
 });
