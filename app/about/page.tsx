@@ -7,19 +7,20 @@ import CTA2 from "@/components/landing/cta2";
 
 export default function AboutPage() {
     const containerVariants = {
-        hidden: { opacity: 0 },
-        visible: {
+        offscreen: { opacity: 0 },
+        onscreen: {
             opacity: 1,
             transition: {
-                duration: 0.8,
-                staggerChildren: 0.2,
+                duration: 0.9,
+                delayChildren: 0.2,
+                staggerChildren: 0.1,
             },
         },
     };
 
     const itemVariants = {
-        hidden: { opacity: 0, y: 50 },
-        visible: {
+        offscreen: { opacity: 0, y: 50 },
+        onscreen: {
             opacity: 1,
             y: 0,
             transition: {
@@ -29,8 +30,8 @@ export default function AboutPage() {
     };
 
     const imageVariants = {
-        hidden: { opacity: 0, scale: 0.9 },
-        visible: {
+        offscreen: { opacity: 0, scale: 0.9 },
+        onscreen: {
             opacity: 1,
             scale: 1,
             transition: {
@@ -40,8 +41,8 @@ export default function AboutPage() {
     };
 
     const textVariants = {
-        hidden: { opacity: 0, x: -30 },
-        visible: {
+        offscreen: { opacity: 0, x: -30 },
+        onscreen: {
             opacity: 1,
             x: 0,
             transition: {
@@ -60,9 +61,9 @@ export default function AboutPage() {
                 <motion.div
                     className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
                     variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true, amount: 0.3 }}>
+                    initial="offscreen"
+                    whileInView="onscreen"
+                    viewport={{ once: true, amount: 0 }}>
                     <div className="flex flex-col items-center justify-start gap-12 lg:gap-20 lg:flex-row">
                         {/* Mission Section */}
                         <motion.div
@@ -232,8 +233,8 @@ export default function AboutPage() {
                 <motion.div
                     className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"
                     variants={containerVariants}
-                    initial="hidden"
-                    whileInView="visible"
+                    initial="offscreen"
+                    whileInView="onscreen"
                     viewport={{ once: true, amount: 0.3 }}>
                     <motion.div className="text-center mb-16" variants={itemVariants}>
                         <motion.h2

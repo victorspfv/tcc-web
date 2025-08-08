@@ -1,10 +1,10 @@
 "use client";
 
-import { Button } from "../ui/button";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import MainTemp2 from "@/public/assets/images/mocks/main-temp2-screen.png";
+import { WaitlistForm } from "@/components/landing/waitlist-form";
 
 export default function CTA2({ bgColor }: { bgColor: string }) {
     const containerVariants = {
@@ -137,11 +137,7 @@ export default function CTA2({ bgColor }: { bgColor: string }) {
                                 //whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                                 transition={{ duration: 0.2 }}>
-                                <Button
-                                    size="lg"
-                                    className={`text-primary-foreground text-lg border-1 border-black rounded-2xl hover:bg-primary font-bold px-10 py-6 bg-primary shadow-card hover:shadow-hover transition ease-in-out`}>
-                                    Join the waitlist
-                                </Button>
+                                <WaitlistForm />
                             </motion.div>
                         </motion.div>
                     </motion.div>
