@@ -7,7 +7,7 @@ import {Card, CardContent, CardHeader} from "@/components/ui/card";
 
 export default function FulfillmentPolicyPage() {
     return (
-        <main className="pt-[56px] lg:pt-[104px]">
+        <main className="pt-[88px] lg:pt-[104px]">
             {/* Hero Section */}
             <HeaderPage title="Fulfillment Policy" color="bg-pblue" />
 

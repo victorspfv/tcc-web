@@ -60,7 +60,7 @@ export default function CrewPage() {
     };
 
     return (
-        <main className="pt-[56px] lg:pt-[104px]">
+        <main className="pt-[88px] lg:pt-[104px]">
             <HeaderPage title="Introducing the Clique Crew" color="bg-pblue200" />
 
             {/* Founder Section */}

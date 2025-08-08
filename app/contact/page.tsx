@@ -2,11 +2,8 @@
 
 import HeaderPage from "@/components/landing/header-page";
 import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { Label } from "@/components/ui/label";
 import CTA2 from "@/components/landing/cta2";
+import ContactForm from "@/components/landing/contact-form";
 
 export default function ContactPage() {
     const containerVariants = {
@@ -43,7 +40,7 @@ export default function ContactPage() {
     };
 
     return (
-        <main className="pt-[56px] lg:pt-[104px]">
+        <main className="pt-[88px] lg:pt-[104px]">
             {/* Hero Section */}
             <HeaderPage title="Contact Us" color="bg-ppink" />
 
@@ -73,54 +70,7 @@ export default function ContactPage() {
                                 <h2 className="text-3xl font-pacifico text-foreground mb-8 text-center">
                                     Send us a message
                                 </h2>
-                               
-                                <form className="space-y-6">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <div className="space-y-2">
-                                            <Label htmlFor="name">Your name</Label>
-                                            <Input
-                                                id="name"
-                                                placeholder="Your name"
-                                                className="border-1 border-black focus:border-ppink"
-                                            />
-                                        </div>
-                                        <div className="space-y-2">
-                                            <Label htmlFor="email">Your email address</Label>
-                                            <Input
-                                                id="email"
-                                                type="email"
-                                                placeholder="e,g. emely@gmail.com"
-                                                className="border-1 border-black focus:border-ppink"
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="space-y-2">
-                                        <Label htmlFor="subject">Subject</Label>
-                                        <Input
-                                            id="subject"
-                                            placeholder="Subject of your message"
-                                            className="border-1 border-black focus:border-ppink"
-                                        />
-                                    </div>
-                                    <div className="space-y-2">
-                                        <Label htmlFor="message">Message</Label>
-                                        <Textarea
-                                            id="message"
-                                            placeholder="Your message"
-                                            className="min-h-[150px] border-1 border-black focus:border-ppink"
-                                        />
-                                    </div>
-                                    <div className="flex justify-center">
-                                        <motion.div whileTap={{ scale: 0.95 }} transition={{ duration: 0.2 }}>
-                                            <Button
-                                                type="submit"
-                                                size="lg"
-                                                className="bg-ppink text-primary-foreground border-1 border-black rounded-2xl hover:bg-ppink/90 font-bold px-10 py-6 shadow-card hover:shadow-hover transition ease-in-out">
-                                                Send Message
-                                            </Button>
-                                        </motion.div>
-                                    </div>
-                                </form>
+                                <ContactForm />
                             </motion.div>
 
                             <motion.p

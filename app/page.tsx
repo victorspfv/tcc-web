@@ -5,7 +5,7 @@ import Welcome3 from "@/components/landing/welcome3";
 
 export default function Home() {
     return (
-        <main className="pt-[56px] lg:pt-[104px]">
+        <main className="pt-[88px] lg:pt-[104px]">
             <Hero2 />
             <Welcome3 />
             <CTA2 bgColor="bg-pblue"/>
